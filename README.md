@@ -53,6 +53,13 @@ php -v
 ### Extenções no Vscode
 - PHP tools
 
+## FiraCode.
+- Fonts para o editor.
+- Site - https://github.com/tonsky/FiraCode/releases
+
+## Monoid.
+- Site - https://larsenwork.com/monoid/
+
 
 
 
