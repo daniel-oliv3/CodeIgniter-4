@@ -60,6 +60,17 @@ php -v
 ## Monoid.
 - Site - https://larsenwork.com/monoid/
 
+## Composer.
+- Site - https://getcomposer.org/
+- Verifica a versão instalada do compser.
+
+```
+composer -v
+```
+
+## Git.
+- Git Bash (Terminal).
+- Site - https://git-scm.com/download/
 
 
 
