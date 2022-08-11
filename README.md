@@ -86,8 +86,8 @@ composer -v
 composer create-project codeigniter4/appstarter app_02
 ```
 
-
-
+### 4 - AMBIENTE DE PRODUÇÃO VS AMBIENTE DE DESENVOLVIMENTO.
+- Ex: app_03
 
 
 
