@@ -81,6 +81,7 @@ composer -v
 - Downloads - https://codeigniter.com/download
 
 - **Composer**
+- Install - https://codeigniter.com/user_guide/installation/installing_composer.html#installation
 ```
 composer create-project codeigniter4/appstarter app_02
 ```
