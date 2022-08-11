@@ -1,3 +1,5 @@
+### 1 - PHP, CODEIGNITER DICAS & SOLUÇÕES.
+
 ## Sobre esta Playlist...
 - Não é uma playlist para aprender **Codelgniter** do `zero`.
 - Aprofundar os conhecimentos da framework.
@@ -74,7 +76,8 @@ composer -v
 
 
 
-
+### 3 - CRIAR UM PROJETO MANUALMENTE OU COM O COMPOSER.
+- Downloads - https://codeigniter.com/download
 
 
 
