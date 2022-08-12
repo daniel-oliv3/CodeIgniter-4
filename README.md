@@ -92,7 +92,8 @@ composer create-project codeigniter4/appstarter app_02
 - Ex: app_03
 
 
-
+### 5 - CONECTAR O CODEIGNITER A UMA BASE DE DADOS.
+- Ex: app_04
 
 
 
