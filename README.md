@@ -95,6 +95,11 @@ composer create-project codeigniter4/appstarter app_02
 ### 5 - CONECTAR O CODEIGNITER A UMA BASE DE DADOS.
 - Ex: app_04
 
+## Sparks.
+```
+php spark make:model Usuario
+```
+- Cria o arquivo models Usuarios.php na pasta: `app/Models/Usuarios.php`.
 
 
 
