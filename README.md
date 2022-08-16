@@ -102,7 +102,14 @@ php spark make:model Usuario
 - Cria o arquivo models Usuarios.php na pasta: `app/Models/Usuarios.php`.
 
 
+### 6 - CI AUTH INTRODUÇÃO.
+**Sistema de Autenticação e Autorização**
+- Autenticação (`authentication`).
+    - Permite verificar se o usúsario pode ou não entrar no sistema.
+- Autorização (`authorization`).
+    - Permite verificar se que áreas ou funcionalidades um usuário pode aceder.
 
+- Ex: app_05
 
 ##
 
