@@ -138,7 +138,8 @@ php spark
 php spark make:controller Main
 ```
 
-
+### 7 - CI AUTH BASE DE DADOS E MIGRATIONS.
+- Ex: app_06
 
 
 
