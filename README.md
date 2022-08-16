@@ -124,6 +124,65 @@ php spark make:model Usuario
 
 **Link** - https://codeigniter.com/download
 - Ex: app_05
+- Localhost: http://localhost/CodeIgniter-4/app_05/public/
+- Extenção VsCode - `PHP Intelephense`.
+
+- Rotas `app/Config/Routes.php`
+
+- PHP Spark
+```
+php spark
+```
+- Cria o ficheiro do controlador
+```
+php spark make:controller Main
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ##
 
