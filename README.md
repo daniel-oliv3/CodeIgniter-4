@@ -103,11 +103,24 @@ php spark make:model Usuario
 
 
 ### 6 - CI AUTH INTRODUÇÃO.
-**Sistema de Autenticação e Autorização**
+**Sistema de Autenticação e Autorização**.
 - Autenticação (`authentication`).
     - Permite verificar se o usúsario pode ou não entrar no sistema.
 - Autorização (`authorization`).
     - Permite verificar se que áreas ou funcionalidades um usuário pode aceder.
+
+**Sistema de Autenticação e Autorização**.
+- É um sistema tradicional de **login** com muitos detalhes.
+    - Preparação do projeto.
+    - Migrações (`migrations`).
+    - Criar contas de usuário.
+    - Confirmação via email.
+    - Encriptação de dados pessoais e senhas.
+    - Recuperação de senha.
+    - Alteração de senha.
+    - Login/Logout.
+    - Controle de autorizações.
+    - ... e muito mais.
 
 - Ex: app_05
 
