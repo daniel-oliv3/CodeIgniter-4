@@ -8,6 +8,9 @@ class Main extends BaseController
 {
     public function index()
     {
+
+        //$db = db_connect();
+
         echo 'Olá, Mundo!';
     }
 }
