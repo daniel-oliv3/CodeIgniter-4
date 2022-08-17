@@ -1,0 +1,38 @@
+ERROR - 2022-08-16 19:26:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in C:\laragon\www\CodeIgniter-4\app_06\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\CodeIgniter-4\app_06\system\Database\MySQLi\Connection.php(292): mysqli->query('SHOW TABLES FRO...', 0)
+#1 C:\laragon\www\CodeIgniter-4\app_06\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SHOW TABLES FRO...')
+#2 C:\laragon\www\CodeIgniter-4\app_06\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW TABLES FRO...')
+#3 C:\laragon\www\CodeIgniter-4\app_06\system\Database\BaseConnection.php(1380): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\laragon\www\CodeIgniter-4\app_06\system\Database\BaseConnection.php(1411): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\laragon\www\CodeIgniter-4\app_06\system\Database\MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\laragon\www\CodeIgniter-4\app_06\system\Database\MigrationRunner.php(167): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\laragon\www\CodeIgniter-4\app_06\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\CodeIgniter-4\app_06\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\CodeIgniter-4\app_06\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\CodeIgniter-4\app_06\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#11 C:\laragon\www\CodeIgniter-4\app_06\system\CodeIgniter.php(897): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#12 C:\laragon\www\CodeIgniter-4\app_06\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#13 C:\laragon\www\CodeIgniter-4\app_06\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\laragon\www\CodeIgniter-4\app_06\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 C:\laragon\www\CodeIgniter-4\app_06\spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}
+ERROR - 2022-08-16 19:27:29 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in C:\laragon\www\CodeIgniter-4\app_06\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\CodeIgniter-4\app_06\system\Database\MySQLi\Connection.php(292): mysqli->query('SHOW TABLES FRO...', 0)
+#1 C:\laragon\www\CodeIgniter-4\app_06\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SHOW TABLES FRO...')
+#2 C:\laragon\www\CodeIgniter-4\app_06\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW TABLES FRO...')
+#3 C:\laragon\www\CodeIgniter-4\app_06\system\Database\BaseConnection.php(1380): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\laragon\www\CodeIgniter-4\app_06\system\Database\BaseConnection.php(1411): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\laragon\www\CodeIgniter-4\app_06\system\Database\MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\laragon\www\CodeIgniter-4\app_06\system\Database\MigrationRunner.php(167): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\laragon\www\CodeIgniter-4\app_06\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\CodeIgniter-4\app_06\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\CodeIgniter-4\app_06\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\CodeIgniter-4\app_06\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#11 C:\laragon\www\CodeIgniter-4\app_06\system\CodeIgniter.php(897): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#12 C:\laragon\www\CodeIgniter-4\app_06\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#13 C:\laragon\www\CodeIgniter-4\app_06\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\laragon\www\CodeIgniter-4\app_06\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#15 C:\laragon\www\CodeIgniter-4\app_06\spark(98): CodeIgniter\CLI\Console->run()
+#16 {main}

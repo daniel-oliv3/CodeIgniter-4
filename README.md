@@ -145,7 +145,9 @@ php spark make:controller Main
 php spark make:migration Usuarios
 ```
 
-
+```
+php spark migrate
+```
 
 
 
