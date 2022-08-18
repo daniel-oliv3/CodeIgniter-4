@@ -156,7 +156,10 @@ php spark migrate
 php spark make:seeder usuarios
 ```
 
-
+**Extenção Visual Studio code**
+    - `Random String Generator` 
+- Visual Studio code, 
+- Ctrl + p ">generate" ... random string/password
 
 
 
