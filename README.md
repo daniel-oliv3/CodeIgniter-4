@@ -152,7 +152,9 @@ php spark migrate
 ### 8 - CI AUTH SEEDING E ENCRIPTAÇÃO
 - Ex: app_07
 
-
+```
+php spark make:seeder usuarios
+```
 
 
 
