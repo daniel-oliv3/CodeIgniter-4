@@ -173,6 +173,8 @@ php spark migrate:rollback
 php spark migrate
 ```
 
+**Comando para pesquisar na tabela descriptado**
+- SELECT AES_DECRYPT(username, UNHEX(SHA2('3y8FHYGfThUpcvE0AC25Sj5OlsD17Ab8', 512))) usuario, passwrd FROM users
 
 
 
