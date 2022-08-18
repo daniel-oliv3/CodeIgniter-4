@@ -32,7 +32,7 @@ class Usuarios extends Seeder
                     'passwrd' => password_hash($user['passwrd'], PASSWORD_DEFAULT)
                 ];
 
-                $db->query("INSERT INTO users(username, passwrd) VALUES(AES_ENCRYPT(:usuario:, UNHEX(SHA2('".AES_KEY."', 512))), :passwrd:)", $params);
+                $db->query("INSERT INTO users(username, passwrd) VALUES(AES_ENCRYPT(:username:, UNHEX(SHA2('".AES_KEY."', 512))), :passwrd:)", $params);
             }
 
             echo 'Terminado!'.PHP_EOL;
