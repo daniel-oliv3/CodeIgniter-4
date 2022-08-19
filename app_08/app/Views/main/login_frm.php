@@ -23,8 +23,12 @@
 
                 <div class="mb-3 text-center">
                     <a href="#">Esqueci a minha senha</a>
-                    <span class="mx-2 "> | </span>
+                    <span class="mx-2 opacity-25">|</span>
                     <a href="#">Criar nova conta</a>
+                </div>
+
+                <div class="mb-3 text-center">
+                    <input type="submit" value="Login" class="btn btn-primary w-50">
                 </div>
 
                 <!-- close form -->    
