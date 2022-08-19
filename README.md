@@ -184,6 +184,9 @@ php spark migrate
 - Site: https://getbootstrap.com/ 
 
 
+### 10 - CI AUTH MODEL E VERIFICAÇÃO DE LOGIN.
+- Ex: app_09
+
 
 
 
