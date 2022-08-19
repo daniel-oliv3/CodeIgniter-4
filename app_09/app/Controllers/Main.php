@@ -11,4 +11,10 @@ class Main extends BaseController
 
         echo view('main/login_frm');
     }
+
+    public function login_submit()
+    {
+
+        echo 'Aqui';
+    }
 }

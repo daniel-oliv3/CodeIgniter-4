@@ -10,10 +10,11 @@
                 <h3 class="text-center">Login</h3>
                 <hr>
 
-                <!-- form -->
+                <?= form_open('main/login_submit') ?>
+
                 <div class="mb-3">
                     <label for="text_username" class="form-label">Email</label>
-                    <input type="text" name="text_username" id="text-username" class="form-control" placeholder="Digite seu Email" required>
+                    <input type="email" name="text_username" id="text-username" class="form-control" placeholder="Digite seu Email" required>
                 </div>
 
                 <div class="mb-3">
@@ -31,7 +32,7 @@
                     <input type="submit" value="Login" class="btn btn-primary w-50">
                 </div>
 
-                <!-- close form -->    
+                <?= form_close() ?>  
 
             </div>
 
