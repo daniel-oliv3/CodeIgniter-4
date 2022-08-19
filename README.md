@@ -177,8 +177,8 @@ php spark migrate
 - SELECT AES_DECRYPT(username, UNHEX(SHA2('3y8FHYGfThUpcvE0AC25Sj5OlsD17Ab8', 512))) usuario, passwrd FROM users
 
 
-
-
+### 9 - CI AUTH FORMULÁRIO DE LOGIN.
+- Ex: app_08
 
 
 
