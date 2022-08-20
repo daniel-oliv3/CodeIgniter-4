@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\User;
 
 class Main extends BaseController
 {
@@ -14,8 +15,10 @@ class Main extends BaseController
 
     public function login_submit()
     {
-        echo 'Aqui';
+        /* - */
+        $users = new User();
+        dd($users->verify_login('',''));
     }
 
-    /*Validação do formulario*/
+    
 }

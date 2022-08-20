@@ -11,8 +11,8 @@ class User extends Model
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
-    protected $returnType       = 'array';
-    protected $useSoftDeletes   = false;
+    protected $returnType       = 'object';
+    protected $useSoftDeletes   = true;
     protected $protectFields    = true;
     protected $allowedFields    = [];
 
@@ -39,4 +39,10 @@ class User extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+
+    //Função
+    public function verify_login($username, $passwrd){
+        //tradicional
+        return $this->findAll();
+    }
 }
