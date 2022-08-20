@@ -17,7 +17,7 @@ class Main extends BaseController
     {
         /* - */
         $users = new User();
-        dd($users->verify_login('',''));
+        dd($users->verify_login($this->request->getPost('text_username'), $this->request->getPost('text_passwrd')));
     }
 
     

@@ -51,7 +51,10 @@ class User extends Model
         ];
 
         $db = db_connect();
-        $result = $db->query("SELECT id, passwrd FROM users WHERE AES_ENCRYPT(:username:, UNHEX(SHA2('".AES_KEY."', 512))) = username", $params)->getResultObject();
+        //$result = $db->query("SELECT id, passwrd FROM users WHERE AES_ENCRYPT(:username:, UNHEX(SHA2('".AES_KEY."', 512))) = username", $params)->getResultObject();
+        $results = $db->query("SELECT id, passwrd FROM users WHERE {$this->aes_encrypt(':username:')} = username", $params)->getResultObject();
+        return count($results) == 0 ? false : password_verify($passwrd, $results[0]->passwrd);
+
 
     }
 
