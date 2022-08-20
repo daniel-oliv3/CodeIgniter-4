@@ -43,6 +43,20 @@ class User extends Model
     //Função
     public function verify_login($username, $passwrd){
         //tradicional
-        return $this->findAll();
+        //return $this->findAll();
+
+        /* - */
+        $params = [
+            'username' => $username
+        ];
+
+        $db = db_connect();
+        $result = $db->query("SELECT id, passwrd FROM users WHERE AES_ENCRYPT(:username:, UNHEX(SHA2('".AES_KEY."', 512))) = username", $params)->getResultObject();
+
+    }
+
+    //function private
+    private function aes_encrypt($field_value){
+        return "AES_ENCRYPT($field_value, UNHEX(SHA2('".AES_KEY."', 512)))";
     }
 }
