@@ -17,8 +17,15 @@ class Main extends BaseController
     {
         /* - */
         $users = new User();
-        dd($users->verify_login($this->request->getPost('text_username'), $this->request->getPost('text_passwrd')));
-    }
 
-    
+        $username = $this->request->getPost('text_username');
+        $passwrd = $this->request->getPost('text_passwrd');
+
+        if(!$users->verify_login($username, $passwrd)){
+            echo 'NOK';
+        }else {
+            echo 'OK';
+        }
+
+    }    
 }
