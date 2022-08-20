@@ -187,7 +187,14 @@ php spark migrate
 ### 10 - CI AUTH MODEL E VERIFICAÇÃO DE LOGIN.
 - Ex: app_09
 
+**Validação do formulário**.
+- Model users
+    - Buscar os dados do utilizador a partir do formulário submetido.
+    - Retorno de true ou false, consoane login ok ou nok.
 
+```
+php spark make:model User
+```
 
 
 
