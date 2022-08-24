@@ -35,11 +35,17 @@ class Main extends BaseController
         $username = $this->request->getPost('text_username');
         $passwrd = $this->request->getPost('text_passwrd');
 
-        if(!$users->verify_login($username, $passwrd)){
+        //Check if login is ok
+        $results = $users->verify_login($username, $passwrd);
+
+        if(!$results['status']){
             echo 'NOK';
+        }else {
+            echo 'OK<br>';
+            echo $results['id_user'];
         }
 
-        /* */
+        /* Create user session */
 
     }    
 }

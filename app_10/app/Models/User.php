@@ -59,14 +59,17 @@ class User extends Model
             ];
         }
 
-        if(password_verify($passwrd, $results[0]->passwrd)){
+        if(!password_verify($passwrd, $results[0]->passwrd)){
             return [
                 'status' => false,
                 'id_user' => null
             ];
-        }
-        
-        return count($results) == 0 ? false : password_verify($passwrd, $results[0]->passwrd);
+        }else {
+            return [
+                'status' => true,
+                'id_user' => $results[0]->id
+            ];
+        }    
     }
 
     /*============================================================================*/
