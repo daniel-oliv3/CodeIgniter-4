@@ -196,7 +196,8 @@ php spark migrate
 php spark make:model User
 ```
 
-
+### 11 - CI AUTH ANÁLISE DE LOGIN COM HELPER.
+- Ex: app_10
 
 
 
