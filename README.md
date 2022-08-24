@@ -199,6 +199,10 @@ php spark make:model User
 ### 11 - CI AUTH ANÁLISE DE LOGIN COM HELPER.
 - Ex: app_10
 
+- Usuario logado?
+    - Não -> mostra quadro login
+    - Sim -> mostra página interior
+
 
 
 
