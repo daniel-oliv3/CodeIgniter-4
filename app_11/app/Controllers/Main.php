@@ -46,8 +46,17 @@ class Main extends BaseController
         /* Get user available data */
         $id_user = $results['id_user'];
         $results = $users->get_user_data($id_user);
+        //dd($results);
 
         /* Create user session */
+        session()->set('user', $results[0]);
+
+        //dd(session()->get());
+
+        //echo '<prev>';
+        //print_r(session()->get());
+
+        return redirect('/');
 
     }    
 }
