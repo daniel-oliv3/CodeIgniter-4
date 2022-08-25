@@ -205,7 +205,8 @@ php spark make:model User
 
 
 
-
+### 12 - CI AUTH CAPTAÇÃO DE DADOS APÓS LOGIN COM SUCESSO.
+- Ex: app_11
 
 
 
