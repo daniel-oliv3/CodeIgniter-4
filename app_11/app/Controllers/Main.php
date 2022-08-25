@@ -39,11 +39,13 @@ class Main extends BaseController
         $results = $users->verify_login($username, $passwrd);
 
         if(!$results['status']){
-            echo 'NOK';
-        }else {
-            echo 'OK<br>';
-            echo $results['id_user'];
+            // login error
+            die('Erro de login');
         }
+
+        /* Get user available data */
+        $id_user = $results['id_user'];
+        $results = $users->get_user_data($id_user);
 
         /* Create user session */
 

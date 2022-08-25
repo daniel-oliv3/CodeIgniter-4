@@ -73,11 +73,22 @@ class User extends Model
     }
 
     /*============================================================================*/
-    public function get_username_data($id_user){
+    public function get_user_data($id_user){
+        $params = [
+            'id_user' => $id_user
+        ];
 
+        $db = db_connect();
+
+        return $db->query("SELECT id, {$this->aes_decrypt('username')}, `profile` FROM users WHERE id = :id_user:", $params)->getResultObject();
     }
     /*============================================================================*/
     private function aes_encrypt($field_value){
         return "AES_ENCRYPT($field_value, UNHEX(SHA2('".AES_KEY."', 512)))";
     }
+    /*============================================================================*/
+    private function aes_decrypt($field_value){
+        return "AES_DECRYPT($field_value, UNHEX(SHA2('".AES_KEY."', 512))) $field_value";
+    }
+
 }
