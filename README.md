@@ -210,7 +210,7 @@ php spark make:model User
 
 - Localhost: http://localhost/CodeIgniter-4/app_11/public/
 
-- Logout: Google chrome, f12/Application/Storage/Clear site data
+- Logout: Google Chrome, `F12/Application/Storage/Clear site data`
 
 
 
