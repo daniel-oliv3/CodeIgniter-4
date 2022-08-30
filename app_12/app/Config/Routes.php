@@ -40,8 +40,8 @@ $routes->get('home/',                       'Main::home');
 // --------------------------------------------------------------------
 // USERNAME
 // --------------------------------------------------------------------
-$routes->get('login_frm',          'UserController::login_frm');
-$routes->post('login_submit/',     'UserController::login_submit');
+$routes->get('login_frm',          'User\UserController::login_frm');
+$routes->post('login_submit/',     'User\UserController::login_submit');
 
 /*
  * --------------------------------------------------------------------
