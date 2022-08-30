@@ -215,9 +215,9 @@ php spark make:model User
 
 - Localhost: http://localhost/CodeIgniter-4/app_12/public/
 
-
-
-
+```
+php spark make:controller UserController
+```
 
 
 
