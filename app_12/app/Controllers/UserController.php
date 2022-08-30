@@ -23,7 +23,7 @@ class UserController extends BaseController
     public function login_submit()
     {
         /* Validação do formulário */
-        $users = new User();
+        $users = new UserModel();
 
         $username = $this->request->getPost('text_username');
         $passwrd = $this->request->getPost('text_passwrd');

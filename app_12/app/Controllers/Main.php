@@ -6,16 +6,28 @@ use App\Controllers\BaseController;
 
 class Main extends BaseController
 {
-    /* ======= - ======= */
+    /* ======= - =======  - ======= - ======= - ======= - =======*/
+    /* ======= - =======  - ======= - ======= - ======= - =======*/
     public function index()
     {
 
         if(!CheckSession()){
-            $this->login_frm();
+            return redirect()->to('login_form');
         }else {
-            die('logado!');
+            $this->home();
         }      
-    }        
+    }
+    
+    /* ======= - =======  - ======= - ======= - ======= - =======*/
+    /* ======= - =======  - ======= - ======= - ======= - =======*/
+    public function home(){
+
+        if(!CheckSession()){
+            return redirect()->to('login_form');
+        }
+
+        echo 'Aplicação!!!';
+    }
 }
 
       

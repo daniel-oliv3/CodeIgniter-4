@@ -10,7 +10,7 @@
                 <h3 class="text-center">Login</h3>
                 <hr>
 
-                <?= form_open('main/login_submit') ?>
+                <?= form_open('login_submit') ?>
 
                 <div class="mb-3">
                     <label for="text_username" class="form-label">Email</label>
