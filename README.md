@@ -213,16 +213,14 @@ php spark make:model User
 ### 13 CI AUTH REFATORAR O CÓDIGO.
 - Ex: app_12
 
-- Localhost: http://localhost/CodeIgniter-4/app_12/public/
-
 ```
 php spark make:controller UserController
 ```
 
+### 14 - CI AUTH USANDO FILTERS.
+- Ex: app_13
 
-
-
-
+- Localhost: http://localhost/CodeIgniter-4/app_13/public/
 
 
 
