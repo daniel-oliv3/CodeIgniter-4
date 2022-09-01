@@ -222,6 +222,39 @@ php spark make:controller UserController
 
 - Localhost: http://localhost/CodeIgniter-4/app_13/public/
 
+- https://codeigniter.com/user_guide/incoming/filters.html?highlight=filters
+
+
+```
+php spark make:filter User/UserFilter
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ##

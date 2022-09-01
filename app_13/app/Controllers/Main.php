@@ -11,21 +11,27 @@ class Main extends BaseController
     public function index()
     {
 
-        if(!CheckSession()){
+        /*if(!CheckSession()){
             return redirect()->to('login_frm');
         }else {
             $this->home();
-        }      
+        }*/
+        
+        echo 'teste1';
+
     }
     
     /*==============================================================*/
     public function home(){
 
-        if(!CheckSession()){
+        /*if(!CheckSession()){
             return redirect()->to('login_frm');
         }
 
-        echo 'Aplicação!!!';
+        echo 'Aplicação!!!';*/
+    
+        echo 'teste2';
+
     }
 }
 
