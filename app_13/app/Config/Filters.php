@@ -2,6 +2,7 @@
 
 namespace Config;
 
+use App\Filters\User\UserFilter;
 use CodeIgniter\Config\BaseConfig;
 use CodeIgniter\Filters\CSRF;
 use CodeIgniter\Filters\DebugToolbar;
@@ -23,11 +24,13 @@ class Filters extends BaseConfig
         'honeypot'      => Honeypot::class,
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
+
+        'user_filter' => UserFilter::class,
     ];
 
     /**
-     * List of filter aliases that are always
-     * applied before and after every request.
+     * Lista de aliases de filtro que são sempre 
+     * aplicados antes e depois de cada solicitação.
      *
      * @var array
      */
@@ -68,5 +71,11 @@ class Filters extends BaseConfig
      *
      * @var array
      */
-    public $filters = [];
+    public $filters = [
+        'user_filter' => [
+            'before' => [
+                '/', 'home/'
+            ]
+        ]
+    ];
 }

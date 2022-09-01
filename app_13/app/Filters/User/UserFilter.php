@@ -9,15 +9,6 @@ use CodeIgniter\HTTP\ResponseInterface;
 class UserFilter implements FilterInterface
 {
     /**
-     * Do whatever processing this filter needs to do.
-     * By default it should not return anything during
-     * normal execution. However, when an abnormal state
-     * is found, it should return an instance of
-     * CodeIgniter\HTTP\Response. If it does, script
-     * execution will end and that Response will be
-     * sent back to the client, allowing for error pages,
-     * redirects, etc.
-     *
      * @param RequestInterface $request
      * @param array|null       $arguments
      *
@@ -25,15 +16,13 @@ class UserFilter implements FilterInterface
      */
     public function before(RequestInterface $request, $arguments = null)
     {
-        //
+        //Check if there is a user in the session/Verifique se há um usuário na sessão.
+        if(!session()->has('user')){
+            return redirect()->to('login_frm');
+        } 
     }
 
-    /**
-     * Allows After filters to inspect and modify the response
-     * object as needed. This method does not allow any way
-     * to stop execution of other after filters, short of
-     * throwing an Exception or Error.
-     *
+    /**   
      * @param RequestInterface  $request
      * @param ResponseInterface $response
      * @param array|null        $arguments
