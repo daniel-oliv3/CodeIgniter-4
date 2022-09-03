@@ -17,7 +17,7 @@ class UserController extends BaseController
     // LOGIN
     /*======================================================*/
     public function login_frm(){
-        echo view('main/login_frm');
+        echo view('user/login_frm');
     }
 
     public function login_submit()
