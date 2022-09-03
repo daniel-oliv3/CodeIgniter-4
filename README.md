@@ -220,8 +220,6 @@ php spark make:controller UserController
 ### 14 - CI AUTH USANDO FILTERS.
 - Ex: app_13
 
-- Localhost: http://localhost/CodeIgniter-4/app_13/public/
-
 - Filters: https://codeigniter.com/user_guide/incoming/filters.html?highlight=filters
 
 **Filters**
@@ -229,8 +227,10 @@ php spark make:controller UserController
 php spark make:filter User/UserFilter
 ```
 
+### 15 - CI AUTH MELHORAR AS REGRAS DE NEGÓCIO DA APLICAÇÃO.
+- Ex: app_14
 
-
+- Localhost: http://localhost/CodeIgniter-4/app_14/public/
 
 
 
