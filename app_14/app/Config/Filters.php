@@ -74,7 +74,7 @@ class Filters extends BaseConfig
     public $filters = [
         'user_filter' => [
             'before' => [
-                '/', 'home/'
+                '/'
             ]
         ]
     ];

@@ -11,16 +11,10 @@ class Main extends BaseController
     public function index()
     {
         
-        echo 'teste1';
+        echo 'Estou dentro da aplicação';
 
     }
     
-    /*==============================================================*/
-    public function home(){
-    
-        echo 'teste2';
-
-    }
 }
 
       

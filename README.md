@@ -231,7 +231,7 @@ php spark make:filter User/UserFilter
 - Ex: app_14
 
 - Localhost: http://localhost/CodeIgniter-4/app_14/public/
-
+- Localhost: http://localhost/CodeIgniter-4/app_14/public/index.php/home
 
 
 
