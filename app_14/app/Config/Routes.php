@@ -37,10 +37,13 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/',                           'Main::index'); 
 // --------------------------------------------------------------------
-// USERNAME
+// AUTH
 // --------------------------------------------------------------------
-$routes->get('login_frm',          'User\UserController::login_frm');
-$routes->post('login_submit/',     'User\UserController::login_submit');
+$routes->get('login_frm',                     'User\UserController::login_frm');
+$routes->post('login_submit/',                'User\UserController::login_submit');
+
+$routes->get('new_user_account_frm',          'User\UserController::new_user_account_frm');
+$routes->post('new_user_account_submit',      'User\UserController::new_user_account_submit');
 
 /*
  * --------------------------------------------------------------------

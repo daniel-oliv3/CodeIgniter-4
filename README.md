@@ -226,12 +226,13 @@ php spark make:controller UserController
 ```
 php spark make:filter User/UserFilter
 ```
+- Localhost: http://localhost/CodeIgniter-4/app_13/public/
+- Localhost: http://localhost/CodeIgniter-4/app_13/public/index.php/home
 
 ### 15 - CI AUTH MELHORAR AS REGRAS DE NEGÓCIO DA APLICAÇÃO.
 - Ex: app_14
 
 - Localhost: http://localhost/CodeIgniter-4/app_14/public/
-- Localhost: http://localhost/CodeIgniter-4/app_14/public/index.php/home
 
 
 

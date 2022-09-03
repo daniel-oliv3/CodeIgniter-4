@@ -45,5 +45,20 @@ class UserController extends BaseController
 
         return redirect('/');
 
-    } 
+    }
+    
+    /*======================================================*/
+    // NEW USER ACCOUNT
+    /*======================================================*/
+    public function new_user_account_frm(){
+        echo 'formulario para novo usuario';
+    }
+
+
+    /*======================================================*/
+    public function new_user_account_submit(){
+        echo 'submissão do formulario para novo usuario';
+    }
+
+
 }

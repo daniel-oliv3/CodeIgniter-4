@@ -25,7 +25,7 @@
                 <div class="mb-3 text-center">
                     <a href="#">Esqueci a minha senha</a>
                     <span class="mx-2 opacity-25">|</span>
-                    <a href="#">Criar nova conta</a>
+                    <a href="<?= site_url('new_user_account_frm')?>">Criar nova conta</a>
                 </div>
 
                 <div class="mb-3 text-center">
