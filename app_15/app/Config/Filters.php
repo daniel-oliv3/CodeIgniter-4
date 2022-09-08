@@ -2,7 +2,7 @@
 
 namespace Config;
 
-use App\Filters\User\UserFilter;
+use App\Filters\User\UserNotLoggedInFilter;
 use CodeIgniter\Config\BaseConfig;
 use CodeIgniter\Filters\CSRF;
 use CodeIgniter\Filters\DebugToolbar;
@@ -25,7 +25,7 @@ class Filters extends BaseConfig
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
 
-        'user_filter' => UserFilter::class,
+        'user_not_logged_in_filter' => UserNotLoggedInFilter::class,
     ];
 
     /**
@@ -72,7 +72,7 @@ class Filters extends BaseConfig
      * @var array
      */
     public $filters = [
-        'user_filter' => [
+        'user_not_logged_in_filter' => [
             'before' => [
                 '/'
             ]

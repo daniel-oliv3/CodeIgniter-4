@@ -238,6 +238,9 @@ php spark make:filter User/UserFilter
 
 - Localhost: http://localhost/CodeIgniter-4/app_15/public/
 
+```
+php spark make:filter UserLoggedInFilter
+```
 
 
 

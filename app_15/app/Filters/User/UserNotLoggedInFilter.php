@@ -6,7 +6,7 @@ use CodeIgniter\Filters\FilterInterface;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 
-class UserFilter implements FilterInterface
+class UserNotLoggedInFilter implements FilterInterface
 {
     /**
      * @param RequestInterface $request
