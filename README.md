@@ -232,11 +232,11 @@ php spark make:filter User/UserFilter
 ### 15 - CI AUTH MELHORAR AS REGRAS DE NEGÓCIO DA APLICAÇÃO.
 - Ex: app_14
 
-- Localhost: http://localhost/CodeIgniter-4/app_14/public/
 
+### 16 - CI AUTH IMPLEMENTAÇÃO DOS FILTERS.
+- Ex: app_15
 
-
-
+- Localhost: http://localhost/CodeIgniter-4/app_15/public/
 
 
 
