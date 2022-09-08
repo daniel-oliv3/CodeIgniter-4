@@ -3,6 +3,7 @@
 namespace Config;
 
 use App\Filters\User\UserNotLoggedInFilter;
+use App\Filters\User\UserLoggedInFilter;
 use CodeIgniter\Config\BaseConfig;
 use CodeIgniter\Filters\CSRF;
 use CodeIgniter\Filters\DebugToolbar;
@@ -26,6 +27,7 @@ class Filters extends BaseConfig
         'secureheaders' => SecureHeaders::class,
 
         'user_not_logged_in_filter' => UserNotLoggedInFilter::class,
+        'user_is_logged_in_filter' => UserLoggedInFilter::class,
     ];
 
     /**
@@ -75,6 +77,11 @@ class Filters extends BaseConfig
         'user_not_logged_in_filter' => [
             'before' => [
                 '/'
+            ]
+        ],
+        'user_is_logged_in_filter' => [
+            'before' => [ 
+                'login_frm', 'new_user_account_frm', //'reset_password_frm'
             ]
         ]
     ];

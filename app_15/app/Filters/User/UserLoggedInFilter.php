@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Filters;
+namespace App\Filters\User;
 
 use CodeIgniter\Filters\FilterInterface;
 use CodeIgniter\HTTP\RequestInterface;
@@ -26,6 +26,9 @@ class UserLoggedInFilter implements FilterInterface
     public function before(RequestInterface $request, $arguments = null)
     {
         //
+        if(session()->has('user')){
+            return redirect()->to('/');
+        }
     }
 
     /**

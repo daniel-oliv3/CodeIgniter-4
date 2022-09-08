@@ -77,11 +77,11 @@ composer -v
 
 
 ### 3 - CRIAR UM PROJETO MANUALMENTE OU COM O COMPOSER.
-- **Manualmente**.
+**Manualmente**.
 - Downloads - https://codeigniter.com/download
 - Ex: app_01
 
-- **Composer**
+**Composer**.
 - Install - https://codeigniter.com/user_guide/installation/installing_composer.html#installation
 ```
 composer create-project codeigniter4/appstarter app_02
