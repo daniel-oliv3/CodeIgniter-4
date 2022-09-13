@@ -17,12 +17,48 @@ class UserController extends BaseController
     // LOGIN
     /*======================================================*/
     public function login_frm(){
-        echo view('user/login_frm');
+
+        // check if there are validation erros is session (verifique se há erros de validação é sessão)
+        $data = [];
+        if(session()->has('validation_errors')){
+            $data['validation_errors'] = session()->getFlashdata('validation_errors');
+        }
+
+        echo view('user/login_frm', $data);
     }
 
     public function login_submit()
     {
+        if($this->request->getMethod() != 'post'){
+            return redirect()->to('/');
+        }
+
         /* Validação do formulário */
+        $validation = $this->validate([
+            'text_username' => [
+                'label' => 'Username',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'O compo {field} é de preenchimento obrigátorio.'
+                ]
+            ],
+            'text_passwrd' => [
+                'label' => 'Password',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'O compo {field} é de preenchimento obrigátorio.'
+                ]
+            ]
+        ]);
+
+        // Ckeck if validation has failed (Verifique se a validação falhou)
+        if(!$validation){
+            return redirect()
+                ->back()
+                ->withInput()
+                ->with('validation_errors', $this->validator->getError());
+        }
+
         $users = new UserModel();
 
         $username = $this->request->getPost('text_username');

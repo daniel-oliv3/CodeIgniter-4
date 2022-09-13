@@ -245,7 +245,8 @@ php spark make:filter UserLoggedInFilter
 
 - Localhost: http://localhost/CodeIgniter-4/app_16/public/
 
-
+**Validation Rules**
+- https://codeigniter.com/user_guide/libraries/validation.html#available-rules
 
 
 

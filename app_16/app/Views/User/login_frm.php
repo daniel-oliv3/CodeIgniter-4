@@ -10,7 +10,7 @@
                 <h3 class="text-center">Login</h3>
                 <hr>
 
-                <?= form_open('login_submit') ?>
+                <?= form_open('login_submit', ['novalidate' => true]) ?>
 
                 <div class="mb-3">
                     <label for="text_username" class="form-label">Email</label>
@@ -33,6 +33,10 @@
                 </div>
 
                 <?= form_close() ?>  
+
+                <?php if(!empty($validation_errors)): ?>
+                    <p>Há erros na validação...</p>
+                <?php endif; ?>
 
             </div>
 
