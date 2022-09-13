@@ -236,14 +236,14 @@ php spark make:filter User/UserFilter
 ### 16 - CI AUTH IMPLEMENTAÇÃO DOS FILTERS.
 - Ex: app_15
 
-- Localhost: http://localhost/CodeIgniter-4/app_15/public/
-
 ```
 php spark make:filter UserLoggedInFilter
 ```
 
+### 17 - CI AUTH INTRODUÇÃO À VALIDAÇÃO DO FORMULÁRIO.
+- Ex: app_16
 
-
+- Localhost: http://localhost/CodeIgniter-4/app_16/public/
 
 
 
