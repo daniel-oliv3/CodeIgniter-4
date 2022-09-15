@@ -35,7 +35,9 @@
                 <?= form_close() ?>  
 
                 <?php if(!empty($validation_errors)): ?>
-                    <p>Há erros na validação...</p>
+                    <?php
+                        var_dump($validation_errors); 
+                    ?>
                 <?php endif; ?>
 
             </div>

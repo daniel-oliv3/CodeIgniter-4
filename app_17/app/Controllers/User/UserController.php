@@ -56,7 +56,7 @@ class UserController extends BaseController
             return redirect()
                 ->back()
                 ->withInput()
-                ->with('validation_errors', $this->validator->getError());
+                ->with('validation_errors', $this->validator->getErrors());
         }
 
         $users = new UserModel();
