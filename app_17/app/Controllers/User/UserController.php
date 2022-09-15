@@ -37,9 +37,10 @@ class UserController extends BaseController
         $validation = $this->validate([
             'text_username' => [
                 'label' => 'Username',
-                'rules' => 'required',
+                'rules' => 'required|valid_email',
                 'errors' => [
-                    'required' => 'O compo {field} é de preenchimento obrigátorio.'
+                    'required' => 'O compo {field} é de preenchimento obrigátorio.',
+                    'valid_email' => 'O compo {field} tem que ser um email válido.'
                 ]
             ],
             'text_passwrd' => [

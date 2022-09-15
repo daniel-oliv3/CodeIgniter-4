@@ -15,7 +15,9 @@
                 <div class="mb-3">
                     <label for="text_username" class="form-label">Email</label>
                     <input type="email" name="text_username" id="text-username" class="form-control" placeholder="Digite seu Email" required value="<?= old('text_username') ?>">
-                    <span class="text-danger fst-italic"><small>Mensagem de Erro</small></span>
+                    <?php if(!empty($validation_errors)): ?>
+                        <span class="text-danger fst-italic"><small><?= show_form_errors('text_username', $validation_errors) ?></small></span>
+                    <?php endif; ?>  
                 </div>
 
                 <div class="mb-3">
@@ -35,12 +37,6 @@
                 </div>
 
                 <?= form_close() ?>  
-
-                <?php if(!empty($validation_errors)): ?>
-                    <?php
-                        var_dump($validation_errors); 
-                    ?>
-                <?php endif; ?>
 
             </div>
 
