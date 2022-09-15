@@ -249,8 +249,10 @@ php spark make:filter UserLoggedInFilter
 - https://codeigniter.com/user_guide/libraries/validation.html#available-rules
 
 
+### 18 - CI AUTH MOSTRAR OS ERROS DE VALIDAÇÃO.
+- Ex: app_17
 
-
+- Localhost: http://localhost/CodeIgniter-4/app_17/public/
 
 
 
