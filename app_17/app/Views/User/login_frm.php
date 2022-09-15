@@ -14,12 +14,14 @@
 
                 <div class="mb-3">
                     <label for="text_username" class="form-label">Email</label>
-                    <input type="email" name="text_username" id="text-username" class="form-control" placeholder="Digite seu Email" required>
+                    <input type="email" name="text_username" id="text-username" class="form-control" placeholder="Digite seu Email" required value="<?= old('text_username') ?>">
+                    <span class="text-danger fst-italic"><small>Mensagem de Erro</small></span>
                 </div>
 
                 <div class="mb-3">
                     <label for="text_passwrd" class="form-label">Senha</label>
                     <input type="password" name="text_passwrd" id="text_passwrd" class="form-control" placeholder="Digite sua senha" required>
+                    <span class="text-danger fst-italic"><small>Mensagem de Erro</small></span>
                 </div>
 
                 <div class="mb-3 text-center">
