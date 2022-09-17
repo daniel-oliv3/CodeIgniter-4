@@ -23,7 +23,9 @@
                 <div class="mb-3">
                     <label for="text_passwrd" class="form-label">Senha</label>
                     <input type="password" name="text_passwrd" id="text_passwrd" class="form-control" placeholder="Digite sua senha" required>
-                    <span class="text-danger fst-italic"><small>Mensagem de Erro</small></span>
+                    <?php if(!empty($validation_errors)): ?>
+                        <span class="text-danger fst-italic"><small><?= show_form_errors('text_passwrd', $validation_errors) ?></small></span>
+                    <?php endif; ?>
                 </div>
 
                 <div class="mb-3 text-center">
