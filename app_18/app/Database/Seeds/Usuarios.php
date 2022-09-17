@@ -12,15 +12,15 @@ class Usuarios extends Seeder
         $users = [
             [
                 'username' => 'daniel@gmail.com',
-                'passwrd' => 'aaaaaa'
+                'passwrd' => 'Aaaaaa1'
             ],
             [
                 'username' => 'priscila@gmail.com',
-                'passwrd' => 'bbbbbb'
+                'passwrd' => 'Bbbbbb2'
             ],
             [
                 'username' => 'sapup3@gmail.com',
-                'passwrd' => 'cccccc'
+                'passwrd' => 'Cccccc3'
             ]
             ];
 
