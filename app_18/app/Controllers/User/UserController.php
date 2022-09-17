@@ -45,9 +45,11 @@ class UserController extends BaseController
             ],
             'text_passwrd' => [
                 'label' => 'Password',
-                'rules' => 'required',
+                'rules' => 'required|min_length[6]|max_length[18]',
                 'errors' => [
-                    'required' => 'O compo {field} é de preenchimento obrigátorio.'
+                    'required' => 'O compo {field} é de preenchimento obrigátorio.',
+                    'min_length' => 'O campo {field} tem que ter, no mínimo, {param} caracteres.',
+                    'max_length' => 'O campo {field} tem que ter, no máximo, {param} caracteres.'
                 ]
             ]
         ]);
