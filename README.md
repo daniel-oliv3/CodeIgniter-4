@@ -252,11 +252,12 @@ php spark make:filter UserLoggedInFilter
 ### 18 - CI AUTH MOSTRAR OS ERROS DE VALIDAÇÃO.
 - Ex: app_17
 
-- Localhost: http://localhost/CodeIgniter-4/app_17/public/
 - Bootstrap 5 - https://getbootstrap.com/docs/5.0/utilities/text/
 
 
-
+### 19 - CI AUTH VALIDAÇÃO DA PASSWORD E REGEX.
+- Localhost: http://localhost/CodeIgniter-4/app_18/public/
+- Ex: app_18
 
 
 
