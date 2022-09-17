@@ -258,17 +258,25 @@ php spark make:filter UserLoggedInFilter
 ### 19 - CI AUTH VALIDAÇÃO DA PASSWORD E REGEX.
 - Localhost: http://localhost/CodeIgniter-4/app_18/public/
 - Ex: app_18
+
 **Lista completa spark**
+- Spark
+
 ```
 php spark
 ```
+
 **db:seed**
 - Executa o propagador especificado para preencher dados conhecidos no banco de dados.
+
 ```
 php spark db:seed usuarios
 ```
 
+- Teste para **expression regular** `expressão regular`.
+- https://regex101.com/
 
+- Regular Expression: `(?=.*\d)(?=.*[a-z])(?=.*[A-Z])`
 
 
 ##
