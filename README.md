@@ -285,6 +285,9 @@ php spark db:seed usuarios
 expressão.
 
 
+### 20 - CI AUTH METODOLOGIAS PARA FACILITAR O DESENVOLVIMENTO.
+- Ex: app_19
+
 
 
 
