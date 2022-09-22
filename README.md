@@ -286,11 +286,14 @@ expressão.
 
 
 ### 20 - CI AUTH METODOLOGIAS PARA FACILITAR O DESENVOLVIMENTO.
+- Facilitar o Login de usuarios na aplicacão em desenvolvimento.
 - Ex: app_19
 
+- Localhost: http://localhost/CodeIgniter-4/app_19/public/index.php/login_frm
 
+- Ex: app_20
 
-
+- Localhost: http://localhost/CodeIgniter-4/app_20/public/index.php/login_frm
 
 
 
