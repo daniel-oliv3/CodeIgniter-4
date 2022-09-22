@@ -1,0 +1,40 @@
+CRITICAL - 2022-09-13 07:57:30 --> Undefined variable $data
+in APPPATH\Controllers\User\UserController.php on line 26.
+ 1 APPPATH\Controllers\User\UserController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\User\\UserController.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User\UserController->login_frm()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-13 07:58:57 --> preg_quote(): Passing null to parameter #1 ($str) of type string is deprecated
+in SYSTEMPATH\Validation\Validation.php on line 662.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'preg_quote(): Passing null to parameter #1 ($str) of type string is deprecated', 'SYSTEMPATH\\Validation\\Validation.php', 662)
+ 2 SYSTEMPATH\Validation\Validation.php(662): preg_quote(null, 'C:\\')
+ 3 [internal function]: CodeIgniter\Validation\Validation::CodeIgniter\Validation\{closure}('text_username')
+ 4 SYSTEMPATH\Validation\Validation.php(664): array_filter([...], Object(Closure), 2)
+ 5 APPPATH\Controllers\User\UserController.php(59): CodeIgniter\Validation\Validation->getError()
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User\UserController->login_submit()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-13 07:58:59 --> preg_quote(): Passing null to parameter #1 ($str) of type string is deprecated
+in SYSTEMPATH\Validation\Validation.php on line 662.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'preg_quote(): Passing null to parameter #1 ($str) of type string is deprecated', 'SYSTEMPATH\\Validation\\Validation.php', 662)
+ 2 SYSTEMPATH\Validation\Validation.php(662): preg_quote(null, 'C:\\')
+ 3 [internal function]: CodeIgniter\Validation\Validation::CodeIgniter\Validation\{closure}('text_username')
+ 4 SYSTEMPATH\Validation\Validation.php(664): array_filter([...], Object(Closure), 2)
+ 5 APPPATH\Controllers\User\UserController.php(59): CodeIgniter\Validation\Validation->getError()
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User\UserController->login_submit()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-13 07:59:11 --> preg_quote(): Passing null to parameter #1 ($str) of type string is deprecated
+in SYSTEMPATH\Validation\Validation.php on line 662.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'preg_quote(): Passing null to parameter #1 ($str) of type string is deprecated', 'SYSTEMPATH\\Validation\\Validation.php', 662)
+ 2 SYSTEMPATH\Validation\Validation.php(662): preg_quote(null, 'C:\\')
+ 3 [internal function]: CodeIgniter\Validation\Validation::CodeIgniter\Validation\{closure}('text_username')
+ 4 SYSTEMPATH\Validation\Validation.php(664): array_filter([...], Object(Closure), 2)
+ 5 APPPATH\Controllers\User\UserController.php(59): CodeIgniter\Validation\Validation->getError()
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User\UserController->login_submit()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

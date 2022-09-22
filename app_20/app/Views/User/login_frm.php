@@ -40,30 +40,38 @@
 
                 <?= form_close() ?>  
 
-            </div>
+                <!-- Facilitar o Login, Exemplo 2(temporario) -->
+                <div class="d-inline">
+                    <span id="user_1">User 1</span> |
+                    <span id="user_2">User 2</span> |
+                    <span id="user_3">User 3</span> 
+                </div>
+                <!-- xx -->
 
+            </div>
         </div>
     </div>
 </div>
 
-<!--Codigo para login, via console chrome(temporario) -->
-<!-- >inspecionar/console: inserir1() -->
+<!--Login atraves de botoes(temporario) -->
 <script>
-    function inserir1(){
+    document.querySelector("#user_1").addEventListener('click', () => {
         document.querySelector("#text_username").value="daniel@gmail.com";
         document.querySelector("#text_passwrd").value="Aaaaaa1";
-    }
+    });
 
-    function inserir2(){
+    document.querySelector("#user_2").addEventListener('click', () => {
         document.querySelector("#text_username").value="priscila@gmail.com";
         document.querySelector("#text_passwrd").value="Bbbbbb2";
-    }
+    });
 
-    function inserir3(){
+    document.querySelector("#user_3").addEventListener('click', () => {
         document.querySelector("#text_username").value="sapup3@gmail.com";
         document.querySelector("#text_passwrd").value="Cccccc3";
-    }
+    });
+        
 </script>    
+<!-- xx -->
 
 <?= $this->endSection() ?>
 
