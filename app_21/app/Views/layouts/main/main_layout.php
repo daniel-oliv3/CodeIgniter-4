@@ -11,7 +11,7 @@
 </head>
 <body class="bg-dark">
 
-    <!-- ======= / ======= -->
+    <!-- ======= Layout/Principal ======= -->
     <?= $this->include('userbar') ?>
 
     <?= $this->renderSection('content') ?>
