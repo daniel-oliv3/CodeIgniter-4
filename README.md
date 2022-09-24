@@ -295,8 +295,10 @@ expressão.
 
 - Localhost: http://localhost/CodeIgniter-4/app_20/public/index.php/login_frm
 
+### 21 - CI AUTH LOGOUT.
+- Ex: app_21
 
-
+- Localhost: http://localhost/CodeIgniter-4/app_21/public/index.php/login_frm
 
 
 
