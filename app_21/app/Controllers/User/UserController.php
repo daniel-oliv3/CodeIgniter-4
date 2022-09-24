@@ -27,6 +27,7 @@ class UserController extends BaseController
         echo view('user/login_frm', $data);
     }
 
+    /*======================================================*/
     public function login_submit()
     {
         if($this->request->getMethod() != 'post'){
@@ -86,6 +87,13 @@ class UserController extends BaseController
         return redirect('/');
 
     }
+
+    /*======================================================*/
+    public function logout(){
+        //logout
+        session()->remove('user');
+        return redirect()->to('/');
+    }
     
     /*======================================================*/
     // NEW USER ACCOUNT
@@ -100,5 +108,11 @@ class UserController extends BaseController
         echo 'submissão do formulario para novo usuario';
     }
 
+
+    /*======================================================*/
+    public function versessao(){
+        echo '<pre>';
+        print_r(session()->get());
+    }
 
 }

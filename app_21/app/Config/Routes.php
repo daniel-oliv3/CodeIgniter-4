@@ -42,8 +42,13 @@ $routes->get('/',                           'Main::index');
 $routes->get('login_frm',                     'User\UserController::login_frm');
 $routes->post('login_submit/',                'User\UserController::login_submit');
 
+$routes->get('logout/',                      'User\UserController::logout');
+
 $routes->get('new_user_account_frm',          'User\UserController::new_user_account_frm');
 $routes->post('new_user_account_submit',      'User\UserController::new_user_account_submit');
+
+// Temporaria
+$routes->get('versessao/',      'User\UserController::versessao');
 
 /*
  * --------------------------------------------------------------------

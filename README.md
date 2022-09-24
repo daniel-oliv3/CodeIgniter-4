@@ -300,6 +300,7 @@ expressão.
 
 - Localhost: http://localhost/CodeIgniter-4/app_21/public/index.php/login_frm
 
+- http://localhost/CodeIgniter-4/app_21/public/index.php/versessao
 
 
 
