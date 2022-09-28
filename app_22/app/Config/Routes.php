@@ -42,10 +42,15 @@ $routes->get('/',                           'Main::index');
 $routes->get('login_frm',                     'User\UserController::login_frm');
 $routes->post('login_submit/',                'User\UserController::login_submit');
 
-$routes->get('logout/',                      'User\UserController::logout');
+$routes->get('logout/',                       'User\UserController::logout');
 
 $routes->get('new_user_account_frm',          'User\UserController::new_user_account_frm');
 $routes->post('new_user_account_submit',      'User\UserController::new_user_account_submit');
+
+$routes->get('area1/',                       'Main::area1');
+$routes->get('area2/',                       'Main::area2');
+$routes->get('area3/',                       'Main::area3');
+
 
 // Temporaria
 $routes->get('versessao/',      'User\UserController::versessao');

@@ -76,7 +76,7 @@ class Filters extends BaseConfig
     public $filters = [
         'user_not_logged_in_filter' => [
             'before' => [
-                '/', 'logout'
+                '/', 'logout', 'area1', 'area2', 'area3'
             ]
         ],
         'user_is_logged_in_filter' => [
