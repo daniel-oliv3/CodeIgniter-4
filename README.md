@@ -306,7 +306,7 @@ expressão.
 ### 22 - CI AUTH AREAS COM ACESSO CONTROLADO.
 - Ex: app_22
 
-
+- Localhost: http://localhost/CodeIgniter-4/app_22/public/index.php/login_frm
 
 
 
