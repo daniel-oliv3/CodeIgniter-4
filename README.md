@@ -324,10 +324,10 @@ php spark db:seed usuarios
 php spark make:filter User/UserIsAdmin
 ```
 
+### 24 - CI AUTH ELEMENTOS DO INTERFACE.
+- Ex: app_24
 
-
-
-
+- Localhost: http://localhost/CodeIgniter-4/app_24/public/index.php/login_frm
 
 
 
