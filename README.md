@@ -314,10 +314,15 @@ expressão.
 
 - Localhost: http://localhost/CodeIgniter-4/app_23/public/index.php/login_frm
 
+```
+php spark db:seed usuarios
+```
 
+- http://localhost/CodeIgniter-4/app_23/public/index.php/versessao
 
-
-
+```
+php spark make:filter User/UserIsAdmin
+```
 
 
 

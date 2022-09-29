@@ -12,15 +12,18 @@ class Usuarios extends Seeder
         $users = [
             [
                 'username' => 'daniel@gmail.com',
-                'passwrd' => 'Aaaaaa1'
+                'passwrd' => 'Aaaaaa1',
+                'profile' => 'admin',
             ],
             [
                 'username' => 'priscila@gmail.com',
-                'passwrd' => 'Bbbbbb2'
+                'passwrd' => 'Bbbbbb2',
+                'profile' => 'user',
             ],
             [
                 'username' => 'sapup3@gmail.com',
-                'passwrd' => 'Cccccc3'
+                'passwrd' => 'Cccccc3',
+                'profile' => 'user',
             ]
             ];
 
@@ -29,10 +32,11 @@ class Usuarios extends Seeder
 
                 $params = [
                     'username' => $user['username'],
-                    'passwrd' => password_hash($user['passwrd'], PASSWORD_DEFAULT)
+                    'passwrd' => password_hash($user['passwrd'], PASSWORD_DEFAULT),
+                    'profile' => $user['profile']
                 ];
 
-                $db->query("INSERT INTO users(username, passwrd) VALUES(AES_ENCRYPT(:username:, UNHEX(SHA2('".AES_KEY."', 512))), :passwrd:)", $params);
+                $db->query("INSERT INTO users(username, passwrd, profile) VALUES(AES_ENCRYPT(:username:, UNHEX(SHA2('".AES_KEY."', 512))), :passwrd:, :profile:)", $params);
             }
 
             echo 'Terminado!'.PHP_EOL;
