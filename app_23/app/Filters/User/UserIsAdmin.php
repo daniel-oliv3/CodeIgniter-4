@@ -26,7 +26,9 @@ class UserIsAdmin implements FilterInterface
     public function before(RequestInterface $request, $arguments = null)
     {
         //verify is user is Admin
-        return session()->user->profile == 'admin' ? true : false;
+        if(session()->user->profile != 'admin'){
+            return redirect()->to('/');
+        }
     }
 
     /**
