@@ -309,7 +309,10 @@ expressão.
 - Localhost: http://localhost/CodeIgniter-4/app_22/public/index.php/login_frm
 
 
+### 23 - CI AUTH AUTORIZAÇÃO.
+- Ex: app_23
 
+- Localhost: http://localhost/CodeIgniter-4/app_23/public/index.php/login_frm
 
 
 
