@@ -18,7 +18,7 @@
             </a>    
         </div>
 
-        <?php if(session()->user->profile == 'admin'): ?>
+        <?php if(isAdmin()): ?>
         <div class="col p-4">
             <a href="<?= site_url('area3') ?>">
                 <div class="card p-3 text-center">
