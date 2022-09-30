@@ -17,13 +17,16 @@
                 </div>
             </a>    
         </div>
+
+        <?php if(session()->user->profile == 'admin'): ?>
         <div class="col p-4">
             <a href="<?= site_url('area3') ?>">
                 <div class="card p-3 text-center">
-                    Área 3
+                    Área 3 (Admin)
                 </div>
             </a>
         </div>
+        <?php endif; ?>
     </div>
 </div>
 
