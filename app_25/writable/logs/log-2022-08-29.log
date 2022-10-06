@@ -1,0 +1,45 @@
+CRITICAL - 2022-08-29 20:41:19 --> Call to undefined method App\Controllers\Main::login_frm()
+in APPPATH\Controllers\Main.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Main->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-29 20:41:43 --> Call to undefined method App\Controllers\Main::login_frm()
+in APPPATH\Controllers\Main.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Main->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-29 20:41:45 --> Call to undefined method App\Controllers\Main::login_frm()
+in APPPATH\Controllers\Main.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Main->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-29 20:41:46 --> Call to undefined method App\Controllers\Main::login_frm()
+in APPPATH\Controllers\Main.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Main->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-29 20:41:47 --> Call to undefined method App\Controllers\Main::login_frm()
+in APPPATH\Controllers\Main.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Main->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-29 20:41:47 --> Call to undefined method App\Controllers\Main::login_frm()
+in APPPATH\Controllers\Main.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Main->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-29 21:05:04 --> Invalid file: login_frm.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login_frm.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('login_frm', [], true)
+ 3 APPPATH\Controllers\UserController.php(20): view('login_frm')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\UserController->login_frm()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
