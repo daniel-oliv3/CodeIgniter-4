@@ -329,9 +329,10 @@ php spark make:filter User/UserIsAdmin
 
 - Localhost: http://localhost/CodeIgniter-4/app_24/public/index.php/login_frm
 
+### 25 - CI AUTH PREPARAÇÃO DA CRIAÇÃO DE CONTA DE USUÁRIO.
+- Ex: app_25
 
-
-
+- Localhost: http://localhost/CodeIgniter-4/app_25/public/index.php/login_frm
 
 
 
