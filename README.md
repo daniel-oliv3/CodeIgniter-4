@@ -334,7 +334,29 @@ php spark make:filter User/UserIsAdmin
 
 - Localhost: http://localhost/CodeIgniter-4/app_25/public/index.php/login_frm
 
+```txt
+Formulário de nova conta
+    Usuario
+    password
+    repetir password
 
+    [Criar]
+
+    |
+    |
+    |
+    v
+
+    Verifica se já existe user com email indicado
+        Sim - Não pode criar conta
+
+        Não
+
+        - Criar um código (Purl)
+        - Criar a conta nos users
+        - Enviar um email com purl (link)
+        - Conta está ativa
+```
 
 
 

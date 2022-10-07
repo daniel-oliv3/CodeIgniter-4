@@ -32,6 +32,16 @@ class Usuarios extends Migration
                 'constraint' => '1000',
                 'null' => true
             ],
+            'purl' => [
+                'type' => 'VARCHAR',
+                'constraint' => '16',
+                'null' => true
+            ],
+            'active' => [
+                'type' => 'TINYINT',
+                'constraint' => 1,
+                'default' => 0
+            ],
             'blocked_until' => [
                 'type' => 'DATETIME',
                 'null' => true
