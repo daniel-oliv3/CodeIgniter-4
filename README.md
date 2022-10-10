@@ -379,7 +379,12 @@ php spark db:seed usuarios
 
 - Localhost: http://localhost/CodeIgniter-4/app_26/public/index.php/new_user_account_frm
 
+- Validation: https://codeigniter.com/user_guide/libraries/validation.html?highlight=validation#available-rules
 
+```txt
+matches  |  Yes  | O valor deve corresponder ao valor do campo
+no parâmetro.  | matches[field]
+```
 
 
 

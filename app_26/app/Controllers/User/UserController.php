@@ -99,7 +99,13 @@ class UserController extends BaseController
     // NEW USER ACCOUNT
     /*======================================================*/
     public function new_user_account_frm(){
-        echo view('user/new_user_account_frm');
+        // check if there are validation erros is session (verifique se há erros de validação é sessão)
+        $data = [];
+        if(session()->has('validation_errors')){
+            $data['validation_errors'] = session()->getFlashdata('validation_errors');
+        }
+
+        echo view('user/new_user_account_frm', $data);
     }
 
 
@@ -131,12 +137,13 @@ class UserController extends BaseController
             ],
             'text_repeat_passwrd' => [
                 'label' => 'Repetir Password',
-                'rules' => 'required|min_length[6]|max_length[18]|regex_match[/(?=.*\d)(?=.*[a-z])(?=.*[A-Z])/]',
+                'rules' => 'required|min_length[6]|max_length[18]|regex_match[/(?=.*\d)(?=.*[a-z])(?=.*[A-Z])/]|matches[text_passwrd]',
                 'errors' => [
                     'required' => 'O compo {field} é de preenchimento obrigátorio.',
                     'min_length' => 'O campo {field} tem que ter, no mínimo, {param} caracteres.',
                     'max_length' => 'O campo {field} tem que ter, no máximo, {param} caracteres.',
-                    'regex_match' => 'A password tem que ter uma letra minúscula, uma maiúscula e um digito.'
+                    'regex_match' => 'A password tem que ter uma letra minúscula, uma maiúscula e um digito.',
+                    'metches' => 'A repetição do password deve ver igual a password.'
                 ]
             ]
         ]);
@@ -148,6 +155,8 @@ class UserController extends BaseController
                 ->withInput()
                 ->with('validation_errors', $this->validator->getErrors());
         }
+
+        //aqui
     }
 
 
