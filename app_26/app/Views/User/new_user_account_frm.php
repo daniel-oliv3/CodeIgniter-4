@@ -10,7 +10,7 @@
                 <h3 class="text-center">Nova conta de usuário</h3>
                 <hr>
 
-                <?= form_open('login_submit', ['novalidate' => true]) ?>
+                <?= form_open('new_user_account_submit', ['novalidate' => true]) ?>
 
                 <div class="mb-3">
                     <label for="text_username" class="form-label">Email</label>
@@ -30,14 +30,18 @@
 
                 <div class="mb-3">
                     <label for="text_repeat_passwrd" class="form-label">Repetir Senha</label>
-                    <input type="password" name="text_repeat_passwrd" id="text_passwrd" class="form-control" placeholder="Digite sua senha" required>
+                    <input type="password" name="text_repeat_passwrd" id="text_passwrd" class="form-control" placeholder="Repetir sua senha" required>
                     <?php if(!empty($validation_errors)): ?>
                         <span class="text-danger fst-italic"><small><?= show_form_errors('text_repeat_passwrd', $validation_errors) ?></small></span>
                     <?php endif; ?>
-                </div>
+                </div>                
 
                 <div class="mb-3 text-center">
                     <input type="submit" value="Criar nova conta" class="btn btn-primary w-50">
+                </div>
+
+                <div class="mb-3 text-center">
+                    <a href="<?= site_url('/') ?>">Voltar</a>
                 </div>
 
                 <?= form_close() ?>  

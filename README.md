@@ -377,6 +377,8 @@ php spark db:seed usuarios
 
 - Localhost: http://localhost/CodeIgniter-4/app_26/public/index.php/login_frm
 
+- Localhost: http://localhost/CodeIgniter-4/app_26/public/index.php/new_user_account_frm
+
 
 
 
