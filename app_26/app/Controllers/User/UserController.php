@@ -105,7 +105,49 @@ class UserController extends BaseController
 
     /*======================================================*/
     public function new_user_account_submit(){
-        echo 'submissão do formulario para novo usuario';
+        if($this->request->getMethod() != 'post'){
+            return redirect()->to('/');
+        }
+
+        /* Validação do formulário */
+        $validation = $this->validate([
+            'text_username' => [
+                'label' => 'Username',
+                'rules' => 'required|valid_email',
+                'errors' => [
+                    'required' => 'O compo {field} é de preenchimento obrigátorio.',
+                    'valid_email' => 'O compo {field} tem que ser um email válido.'
+                ]
+            ],
+            'text_passwrd' => [
+                'label' => 'Password',
+                'rules' => 'required|min_length[6]|max_length[18]|regex_match[/(?=.*\d)(?=.*[a-z])(?=.*[A-Z])/]',
+                'errors' => [
+                    'required' => 'O compo {field} é de preenchimento obrigátorio.',
+                    'min_length' => 'O campo {field} tem que ter, no mínimo, {param} caracteres.',
+                    'max_length' => 'O campo {field} tem que ter, no máximo, {param} caracteres.',
+                    'regex_match' => 'A password tem que ter uma letra minúscula, uma maiúscula e um digito.'
+                ]
+            ],
+            'text_repeat_passwrd' => [
+                'label' => 'Repetir Password',
+                'rules' => 'required|min_length[6]|max_length[18]|regex_match[/(?=.*\d)(?=.*[a-z])(?=.*[A-Z])/]',
+                'errors' => [
+                    'required' => 'O compo {field} é de preenchimento obrigátorio.',
+                    'min_length' => 'O campo {field} tem que ter, no mínimo, {param} caracteres.',
+                    'max_length' => 'O campo {field} tem que ter, no máximo, {param} caracteres.',
+                    'regex_match' => 'A password tem que ter uma letra minúscula, uma maiúscula e um digito.'
+                ]
+            ]
+        ]);
+
+        // Ckeck if validation has failed (Verifique se a validação falhou)
+        if(!$validation){
+            return redirect()
+                ->back()
+                ->withInput()
+                ->with('validation_errors', $this->validator->getErrors());
+        }
     }
 
 
