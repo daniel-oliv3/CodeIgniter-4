@@ -48,8 +48,8 @@ class UserModel extends Model
         ];
 
         $db = db_connect();
-        //$result = $db->query("SELECT id, passwrd FROM users WHERE AES_ENCRYPT(:username:, UNHEX(SHA2('".AES_KEY."', 512))) = username", $params)->getResultObject();
-        $results = $db->query("SELECT id, passwrd FROM users WHERE {$this->aes_encrypt(':username:')} = username", $params)->getResultObject();
+       
+        $results = $db->query("SELECT id, passwrd FROM users WHERE {$this->aes_encrypt(':username:')} = username AND active = 1", $params)->getResultObject();
         
         //return results
         if(count($results) == 0){
