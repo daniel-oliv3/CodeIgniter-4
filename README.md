@@ -373,7 +373,7 @@ php spark db:seed usuarios
 ```
 
 ### 26 - CI AUTH FORMULÁRIO DE CRIAÇÃO DA CONTA DE USUÁRIO.
-- Ex: app_25
+- Ex: app_26
 
 - Localhost: http://localhost/CodeIgniter-4/app_26/public/index.php/login_frm
 

@@ -99,7 +99,7 @@ class UserController extends BaseController
     // NEW USER ACCOUNT
     /*======================================================*/
     public function new_user_account_frm(){
-        echo 'formulario para novo usuario';
+        echo view('user/new_user_account_frm');
     }
 
 
