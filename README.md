@@ -337,8 +337,8 @@ php spark make:filter User/UserIsAdmin
 ```txt
 Formulário de nova conta
     Usuario
-    password
-    repetir password
+    Password
+    Repetir password
 
     [Criar]
 
@@ -358,8 +358,15 @@ Formulário de nova conta
         - Conta está ativa
 ```
 
+##
 
+```
+php spark migrate:rollback
+```
 
+```
+php spark migrate
+```
 
 
 
