@@ -386,8 +386,8 @@ matches  |  Yes  | O valor deve corresponder ao valor do campo
 no parâmetro.  | matches[field]
 ```
 
-
-
+### 27 - CI AUTH VERIFICAR SE CONTA JÁ EXISTE.
+- Ex: app_27
 
 
 
