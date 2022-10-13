@@ -156,7 +156,20 @@ class UserController extends BaseController
                 ->with('validation_errors', $this->validator->getErrors());
         }
 
-        //aqui
+        //Check if username already exists in database/ Verifique se o nome de usuário já existe no banco de dados
+        $user = new UserModel();
+        $result = $user->check_if_user_account_already_exists($this->request->getPost('text_username'));
+
+        if($result){
+            die('Já existe uma conta com o mesmo email!');
+        }
+
+        //Create new user account
+        $username = $this->request->getPost('text_username');
+        $passwrd = $this->request->getPost('text_passwrd');
+
+        //Send email with purl to validation email address
+
     }
 
 

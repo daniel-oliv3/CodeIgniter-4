@@ -393,11 +393,20 @@ no parâmetro.  | matches[field]
 ### 28 - CI AUTH CRIAR CONTA DE UTILIZADOR COM PURL.
 - Ex: app_28
 
+- Localhost: http://localhost/CodeIgniter-4/app_28/public/index.php/login_frm
 
+```txt
 
+Create new user account
+    - Guardar os dados de username e password
+    - Gerar um purl (Guardado na base de dados)
+    - retornar o purl
 
+Send email with purl to validation email address
+    - Preparar um email com o purl
+    - Enviar o email para username
 
-
+```
 
 
 
