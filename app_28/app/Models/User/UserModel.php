@@ -83,6 +83,30 @@ class UserModel extends Model
         return $db->query("SELECT id, {$this->aes_decrypt('username')}, `profile` FROM users WHERE id = :id_user:", $params)->getResultObject();
     }
     /*============================================================================*/
+    public function ckeck_if_user_account_already_exists($username){
+        $params = [
+            'username' => $username
+        ];
+        $db = db_connect();
+        $results = $db->query("SELECT id FROM users WHERE {$this->aes_encrypt(':username:')} = username", $params)->get();
+        return count($results) == 0 ? false : true;
+    }
+    /*============================================================================*/
+    public function create_new_user_account($username, $passwrd){
+
+        $purl = 'Codigo';
+
+        $params = [
+            'username' => $username,
+            'passwrd' => password_hash($passwrd, PASSWORD_DEFAULT),
+            'purl' => $purl
+        ];
+        
+        $db = db_connect();
+        $db->query("INSERT INTO users(username, passwrd, profile, purl) VALUES")
+    }
+
+    /*============================================================================*/
     private function aes_encrypt($field_value){
         return "AES_ENCRYPT($field_value, UNHEX(SHA2('".AES_KEY."', 512)))";
     }
