@@ -390,6 +390,8 @@ no parâmetro.  | matches[field]
 - Ex: app_27
 
 
+### 28 - CI AUTH CRIAR CONTA DE UTILIZADOR COM PURL.
+- Ex: app_28
 
 
 

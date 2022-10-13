@@ -1,0 +1,66 @@
+ERROR - 2022-08-18 07:33:02 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':usuario:, UNHEX(SHA2('3y8FHYGfThUpcvE0AC25Sj5OlsD17Ab8', 512))), '$2y$10$VW.eQ6' at line 1 in C:\laragon\www\CodeIgniter-4\app_07\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\CodeIgniter-4\app_07\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO use...', 0)
+#1 C:\laragon\www\CodeIgniter-4\app_07\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 C:\laragon\www\CodeIgniter-4\app_07\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 C:\laragon\www\CodeIgniter-4\app_07\app\Database\Seeds\Usuarios.php(35): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...', Array)
+#4 C:\laragon\www\CodeIgniter-4\app_07\system\Database\Seeder.php(145): App\Database\Seeds\Usuarios->run()
+#5 C:\laragon\www\CodeIgniter-4\app_07\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#6 C:\laragon\www\CodeIgniter-4\app_07\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\laragon\www\CodeIgniter-4\app_07\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\laragon\www\CodeIgniter-4\app_07\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#9 C:\laragon\www\CodeIgniter-4\app_07\system\CodeIgniter.php(897): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#10 C:\laragon\www\CodeIgniter-4\app_07\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#11 C:\laragon\www\CodeIgniter-4\app_07\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\CodeIgniter-4\app_07\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\CodeIgniter-4\app_07\spark(98): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2022-08-18 07:49:03 --> Error connecting to the database: mysqli_sql_exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\laragon\www\CodeIgniter-4\app_07\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\laragon\www\CodeIgniter-4\app_07\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'user_ci_auth', 'Lo6EBeLASamaPu3...', 'ci_auth', 3306, '', 0)
+#1 C:\laragon\www\CodeIgniter-4\app_07\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\CodeIgniter-4\app_07\system\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\CodeIgniter-4\app_07\system\Database\Config.php(105): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#4 C:\laragon\www\CodeIgniter-4\app_07\system\Database\Seeder.php(96): CodeIgniter\Database\Config::forge(NULL)
+#5 C:\laragon\www\CodeIgniter-4\app_07\system\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#6 C:\laragon\www\CodeIgniter-4\app_07\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\laragon\www\CodeIgniter-4\app_07\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\laragon\www\CodeIgniter-4\app_07\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#9 C:\laragon\www\CodeIgniter-4\app_07\system\CodeIgniter.php(897): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#10 C:\laragon\www\CodeIgniter-4\app_07\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#11 C:\laragon\www\CodeIgniter-4\app_07\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\CodeIgniter-4\app_07\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\CodeIgniter-4\app_07\spark(98): CodeIgniter\CLI\Console->run()
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\laragon\www\CodeIgniter-4\app_07\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\laragon\www\CodeIgniter-4\app_07\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\CodeIgniter-4\app_07\system\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\CodeIgniter-4\app_07\system\Database\Config.php(105): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#3 C:\laragon\www\CodeIgniter-4\app_07\system\Database\Seeder.php(96): CodeIgniter\Database\Config::forge(NULL)
+#4 C:\laragon\www\CodeIgniter-4\app_07\system\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#5 C:\laragon\www\CodeIgniter-4\app_07\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Seed->run(Array)
+#6 C:\laragon\www\CodeIgniter-4\app_07\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#7 C:\laragon\www\CodeIgniter-4\app_07\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#8 C:\laragon\www\CodeIgniter-4\app_07\system\CodeIgniter.php(897): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#9 C:\laragon\www\CodeIgniter-4\app_07\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#10 C:\laragon\www\CodeIgniter-4\app_07\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\CodeIgniter-4\app_07\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\CodeIgniter-4\app_07\spark(98): CodeIgniter\CLI\Console->run()
+#13 {main}
+CRITICAL - 2022-08-18 07:49:03 --> Unable to connect to the database.
+Main connection [MySQLi]: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\Config.php(105): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 SYSTEMPATH\Database\Seeder.php(96): CodeIgniter\Database\Config::forge(null)
+ 4 SYSTEMPATH\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+ 5 SYSTEMPATH\CLI\Commands.php(63): CodeIgniter\Commands\Database\Seed->run([...])
+ 6 SYSTEMPATH\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('db:seed', [...])
+ 7 SYSTEMPATH\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index([...])
+ 8 SYSTEMPATH\CodeIgniter.php(897): CodeIgniter\CLI\CommandRunner->_remap('index', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+10 SYSTEMPATH\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+12 ROOTPATH\spark(98): CodeIgniter\CLI\Console->run()
