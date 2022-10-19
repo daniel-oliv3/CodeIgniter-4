@@ -1,0 +1,51 @@
+ERROR - 2022-10-10 10:45:16 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1)' at line 1 in C:\laragon\www\CodeIgniter-4\app_25\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\CodeIgniter-4\app_25\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO use...', 0)
+#1 C:\laragon\www\CodeIgniter-4\app_25\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 C:\laragon\www\CodeIgniter-4\app_25\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 C:\laragon\www\CodeIgniter-4\app_25\app\Database\Seeds\Usuarios.php(43): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...', Array)
+#4 C:\laragon\www\CodeIgniter-4\app_25\system\Database\Seeder.php(145): App\Database\Seeds\Usuarios->run()
+#5 C:\laragon\www\CodeIgniter-4\app_25\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#6 C:\laragon\www\CodeIgniter-4\app_25\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\laragon\www\CodeIgniter-4\app_25\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\laragon\www\CodeIgniter-4\app_25\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#9 C:\laragon\www\CodeIgniter-4\app_25\system\CodeIgniter.php(897): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#10 C:\laragon\www\CodeIgniter-4\app_25\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#11 C:\laragon\www\CodeIgniter-4\app_25\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\CodeIgniter-4\app_25\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\CodeIgniter-4\app_25\spark(98): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2022-10-10 10:46:33 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1)' at line 1 in C:\laragon\www\CodeIgniter-4\app_25\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\CodeIgniter-4\app_25\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO use...', 0)
+#1 C:\laragon\www\CodeIgniter-4\app_25\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 C:\laragon\www\CodeIgniter-4\app_25\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 C:\laragon\www\CodeIgniter-4\app_25\app\Database\Seeds\Usuarios.php(43): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...', Array)
+#4 C:\laragon\www\CodeIgniter-4\app_25\system\Database\Seeder.php(145): App\Database\Seeds\Usuarios->run()
+#5 C:\laragon\www\CodeIgniter-4\app_25\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#6 C:\laragon\www\CodeIgniter-4\app_25\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\laragon\www\CodeIgniter-4\app_25\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\laragon\www\CodeIgniter-4\app_25\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#9 C:\laragon\www\CodeIgniter-4\app_25\system\CodeIgniter.php(897): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#10 C:\laragon\www\CodeIgniter-4\app_25\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#11 C:\laragon\www\CodeIgniter-4\app_25\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\CodeIgniter-4\app_25\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\CodeIgniter-4\app_25\spark(98): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2022-10-10 10:49:13 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1)' at line 1 in C:\laragon\www\CodeIgniter-4\app_25\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\laragon\www\CodeIgniter-4\app_25\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO use...', 0)
+#1 C:\laragon\www\CodeIgniter-4\app_25\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 C:\laragon\www\CodeIgniter-4\app_25\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 C:\laragon\www\CodeIgniter-4\app_25\app\Database\Seeds\Usuarios.php(43): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...', Array)
+#4 C:\laragon\www\CodeIgniter-4\app_25\system\Database\Seeder.php(145): App\Database\Seeds\Usuarios->run()
+#5 C:\laragon\www\CodeIgniter-4\app_25\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#6 C:\laragon\www\CodeIgniter-4\app_25\system\CLI\Commands.php(63): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\laragon\www\CodeIgniter-4\app_25\system\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\laragon\www\CodeIgniter-4\app_25\system\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index(Array)
+#9 C:\laragon\www\CodeIgniter-4\app_25\system\CodeIgniter.php(897): CodeIgniter\CLI\CommandRunner->_remap('index', Array)
+#10 C:\laragon\www\CodeIgniter-4\app_25\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+#11 C:\laragon\www\CodeIgniter-4\app_25\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\CodeIgniter-4\app_25\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\CodeIgniter-4\app_25\spark(98): CodeIgniter\CLI\Console->run()
+#14 {main}

@@ -408,7 +408,10 @@ Send email with purl to validation email address
 
 ```
 
+### 29 - CI AUTH COMO CRIAR UM PURL.
+- Ex: app_29
 
+- http://localhost/CodeIgniter-4/app_29/public/index.php/login_frm
 
 
 
