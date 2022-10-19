@@ -54,6 +54,8 @@ $routes->get('area3/',                       'Main::area3');
 
 // Temporaria
 $routes->get('versessao/',      'User\UserController::versessao');
+$routes->get('teste/',          'Main::teste');
+
 
 /*
  * --------------------------------------------------------------------

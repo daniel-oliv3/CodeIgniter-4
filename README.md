@@ -412,6 +412,8 @@ Send email with purl to validation email address
 - Ex: app_29
 
 - http://localhost/CodeIgniter-4/app_29/public/index.php/login_frm
+- http://localhost/CodeIgniter-4/app_29/public/index.php/teste
+
 
 
 

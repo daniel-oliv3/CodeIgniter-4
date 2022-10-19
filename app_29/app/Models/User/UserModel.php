@@ -94,7 +94,7 @@ class UserModel extends Model
     /*============================================================================*/
     public function create_new_user_account($username, $passwrd){
 
-        $purl = 'CÓDIGO';
+        $purl = create_hash(12);
         $profile = 'user';
 
         $params = [

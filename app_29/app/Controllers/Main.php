@@ -8,7 +8,9 @@ class Main extends BaseController
 {
 
     /*==============================================================*/
-    public function index(){       
+    public function index(){    
+        
+        
         return view('main/home');
     }
 
@@ -26,7 +28,12 @@ class Main extends BaseController
     public function area3(){       
         die('area3');
     }
+
+    public function teste(){
+        //echo create_hash();
+        echo strtolower(create_hash());
+    }
     
 }
 
-      
+
