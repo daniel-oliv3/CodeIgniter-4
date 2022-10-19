@@ -83,7 +83,7 @@ class UserModel extends Model
         return $db->query("SELECT id, {$this->aes_decrypt('username')}, `profile` FROM users WHERE id = :id_user:", $params)->getResultObject();
     }
     /*============================================================================*/
-    public function ckeck_if_user_account_already_exists($username){
+    public function check_if_user_account_already_exists($username){
         $params = [
             'username' => $username
         ];
@@ -95,18 +95,27 @@ class UserModel extends Model
     public function create_new_user_account($username, $passwrd){
 
         $purl = 'CÓDIGO';
+        $profile = 'user';
 
         $params = [
             'username' => $username,
             'passwrd' => password_hash($passwrd, PASSWORD_DEFAULT),
+            'profile' => $profile,
             'purl' => $purl
         ];
         
         $db = db_connect();
         $db->query(
-            "INSERT INTO users(username, passwrd, profile, purl)VALUES" . 
-            "({$this->aes_decrypt(':username:')})), :passwrd:, "
-        );
+            "INSERT INTO users(username, passwrd, profile, purl) VALUES" .
+            "(" . 
+            "{$this->aes_encrypt(':username:')}, " .
+            ":passwrd:, " .
+            ":profile:, " .
+            ":purl:" .
+            ")"
+        , $params);
+
+        return $params['purl'];
     }
 
     /*============================================================================*/
