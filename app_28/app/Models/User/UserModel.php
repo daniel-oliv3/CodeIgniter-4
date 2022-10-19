@@ -88,13 +88,13 @@ class UserModel extends Model
             'username' => $username
         ];
         $db = db_connect();
-        $results = $db->query("SELECT id FROM users WHERE {$this->aes_encrypt(':username:')} = username", $params)->get();
+        $results = $db->query("SELECT id FROM users WHERE {$this->aes_encrypt(':username:')} = username", $params)->getResultObject();
         return count($results) == 0 ? false : true;
     }
     /*============================================================================*/
     public function create_new_user_account($username, $passwrd){
 
-        $purl = 'Codigo';
+        $purl = 'CÓDIGO';
 
         $params = [
             'username' => $username,
@@ -103,7 +103,10 @@ class UserModel extends Model
         ];
         
         $db = db_connect();
-        $db->query("INSERT INTO users(username, passwrd, profile, purl) VALUES")
+        $db->query(
+            "INSERT INTO users(username, passwrd, profile, purl)VALUES" . 
+            "({$this->aes_decrypt(':username:')})), :passwrd:, "
+        );
     }
 
     /*============================================================================*/
