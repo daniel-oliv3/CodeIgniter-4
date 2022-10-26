@@ -415,9 +415,10 @@ Send email with purl to validation email address
 - http://localhost/CodeIgniter-4/app_29/public/index.php/teste
 
 
+### 30 - CI AUTH ENVIO DO EMAIL COM O PURL
+- Ex: app_30
 
-
-
+- http://localhost/CodeIgniter-4/app_30/public/index.php/login_frm
 
 
 

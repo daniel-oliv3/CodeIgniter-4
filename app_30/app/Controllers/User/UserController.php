@@ -168,12 +168,16 @@ class UserController extends BaseController
         //Create new user account
         $username = $this->request->getPost('text_username');
         $passwrd = $this->request->getPost('text_passwrd');
-        $result = $user->create_new_user_account($username, $passwrd);
+        $purl_code = $user->create_new_user_account($username, $passwrd);
 
-        echo $result;
 
         //Send email with purl to validation email address
 
+    }
+
+    /*======================================================*/
+    public function verify_email($purl = null){
+        die($purl);
     }
 
 
