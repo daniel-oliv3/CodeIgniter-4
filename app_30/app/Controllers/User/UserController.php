@@ -172,12 +172,13 @@ class UserController extends BaseController
 
 
         //Send email with purl to validation email address
-
+        $purl = site_url('verify_email/' . $purl_code);
+        echo $purl;
     }
 
     /*======================================================*/
     public function verify_email($purl = null){
-        die($purl);
+        die('Valor: ' . $purl);
     }
 
 

@@ -46,6 +46,7 @@ $routes->get('logout/',                       'User\UserController::logout');
 
 $routes->get('new_user_account_frm',          'User\UserController::new_user_account_frm');
 $routes->post('new_user_account_submit',      'User\UserController::new_user_account_submit');
+$routes->get('verify_email/(:alphanum)',      'User\UserController::verify_email/$1');
 
 $routes->get('area1/',                       'Main::area1');
 $routes->get('area2/',                       'Main::area2');

@@ -420,7 +420,7 @@ Send email with purl to validation email address
 
 - http://localhost/CodeIgniter-4/app_30/public/index.php/login_frm
 
-
+- https://codeigniter.com/user_guide/incoming/routing.html
 
 
 
