@@ -173,7 +173,28 @@ class UserController extends BaseController
 
         //Send email with purl to validation email address
         $purl = site_url('verify_email/' . $purl_code);
-        echo $purl;
+        //echo $purl;
+
+        $email = \Config\Services::email();
+        $email->setFrom('ci_auth@ci_auth.com', 'CI Auth');
+        $email->setTo($username);
+
+        $email->setSubject('CI Auth - Confirmação de email');
+        $email->setMailType('html');
+
+        $message = 
+        '
+            <h3>CI Auth - Confirmação de conta de usuário</h3>
+            <p>Para concluir o seu registro, clique no link abaixo.</p>
+            <p>
+                <a href="' . $purl . '">Confirmar email</a>
+            </p>
+        ';
+        $email->setMessage($message);
+        $email->send();
+
+        //apresentar mensagem
+        die('Foi enviado um email para ' . $username);
     }
 
     /*======================================================*/

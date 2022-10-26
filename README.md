@@ -421,8 +421,23 @@ Send email with purl to validation email address
 - http://localhost/CodeIgniter-4/app_30/public/index.php/login_frm
 
 - https://codeigniter.com/user_guide/incoming/routing.html
+- https://codeigniter.com/user_guide/libraries/email.html?highlight=email%20class
 
+- Sending Email
+```php
+//Exemplo
+$email = \Config\Services::email();
 
+$email->setFrom('your@example.com', 'Your Name');
+$email->setTo('someone@example.com');
+$email->setCC('another@another-example.com');
+$email->setBCC('them@their-example.com');
+
+$email->setSubject('Email Test');
+$email->setMessage('Testing the email class.');
+
+$email->send();
+```
 
 
 
