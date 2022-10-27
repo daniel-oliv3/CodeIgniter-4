@@ -193,8 +193,14 @@ class UserController extends BaseController
         $email->setMessage($message);
         $email->send();
 
-        //apresentar mensagem
-        die('Foi enviado um email para ' . $username);
+        $this->show_confirmation_email($username);
+
+    }
+
+    /*======================================================*/
+    private function show_confirmation_email($username){
+        $data['email'] = $username;
+        echo view('user/show_confirmation_email', $data);
     }
 
     /*======================================================*/

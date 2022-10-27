@@ -444,9 +444,14 @@ $email->send();
 
 - http://localhost/CodeIgniter-4/app_31/public/index.php/login_frm
 
+```sql
+SELECT AES_DECRYPT(username, UNHEX(SHA2('sCAI7xPKtgwxfWLBcuvTU5tEnGJYENce', 512))) usuario, purl FROM users
+```
 
+```html
+<p>Verificar se o purl é válido<p>
 
-
+```
 
 
 
