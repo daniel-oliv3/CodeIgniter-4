@@ -448,8 +448,16 @@ $email->send();
 SELECT AES_DECRYPT(username, UNHEX(SHA2('sCAI7xPKtgwxfWLBcuvTU5tEnGJYENce', 512))) usuario, purl FROM users
 ```
 
-```html
-<p>Verificar se o purl é válido<p>
+```txt
+Verificar se o purl é válido (Tamanho)
+Verificar se existe o purl na base de dados.
+    - Não: Redirecionar para a pagina inicial
+    - Sim: 
+        Passa a ativo = 1
+        Atualiza o updated_at
+        remove o purl
+
+        Apresenta uma mensagem a indicar que a conta foi confirmada
 
 ```
 
