@@ -439,9 +439,10 @@ $email->setMessage('Testing the email class.');
 $email->send();
 ```
 
+### 31 - CI AUTH PREPARAÇÃO DAS LÓGICAS DE CONCLUSÃO DO REGISTO.
+- Ex: app_31
 
-
-
+- http://localhost/CodeIgniter-4/app_31/public/index.php/login_frm
 
 
 
