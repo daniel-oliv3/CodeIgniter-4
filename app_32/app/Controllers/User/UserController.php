@@ -205,7 +205,14 @@ class UserController extends BaseController
 
     /*======================================================*/
     public function verify_email($purl = null){
-        die('Valor: ' . $purl);
+        
+        //Check if is purl valid
+        if(empty($purl) || strlen($purl) != 12){
+            return redirect()->to('/');
+        }
+
+        $user = new UserModel();
+        $results = $user->check_confirm_email_address($purl);
     }
 
 

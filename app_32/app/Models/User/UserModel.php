@@ -119,6 +119,16 @@ class UserModel extends Model
     }
 
     /*============================================================================*/
+    public function check_confirm_email_address($purl){
+        $params = [
+            'purl' => $purl
+        ];
+        
+        $db = db_connect();
+        $results = $db->query("SELECT id FROM users WHERE purl = :purl:", $params)->getResultObject();
+    }
+
+    /*============================================================================*/
     private function aes_encrypt($field_value){
         return "AES_ENCRYPT($field_value, UNHEX(SHA2('".AES_KEY."', 512)))";
     }
