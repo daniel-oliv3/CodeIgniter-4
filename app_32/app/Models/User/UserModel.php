@@ -126,6 +126,17 @@ class UserModel extends Model
         
         $db = db_connect();
         $results = $db->query("SELECT id FROM users WHERE purl = :purl:", $params)->getResultObject();
+        if($db->affectedRows() == 0){
+            return false;
+        }
+
+        //Update the database to confirm the email address
+        $params = [
+            'id' => $results[0]->id
+        ];
+        $db->query("UPDATE users SET purl = NULL, updated_at = NOW(), active = 1 WHERE id = :id:", $params);
+
+        return true;
     }
 
     /*============================================================================*/

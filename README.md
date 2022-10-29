@@ -467,10 +467,14 @@ Verificar se existe o purl na base de dados.
 - http://localhost/CodeIgniter-4/app_32/public/index.php/login_frm
 
 
+- http://localhost/CodeIgniter-4/app_32/public/index.php/verify_email/oLqVxAvrBJYx
+- laragon/bin/sendmail/output
 
-
-
-
+```txt
+Verificar se existe o purl na base de dados.
+    - Não: Redirecionar para a pagina inicial
+    - Sim: Apresenta uma mensagem a indicar que a conta foi confirmada
+```
 
 
 
