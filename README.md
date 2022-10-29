@@ -461,6 +461,11 @@ Verificar se existe o purl na base de dados.
 
 ```
 
+### 32 - CI AUTH LÓGICAS PARA CONCLUSÃO DO REGISTO
+- Ex: app_32
+
+- http://localhost/CodeIgniter-4/app_32/public/index.php/login_frm
+
 
 
 
