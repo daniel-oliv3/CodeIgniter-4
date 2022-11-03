@@ -213,6 +213,21 @@ class UserController extends BaseController
 
         $user = new UserModel();
         $results = $user->check_confirm_email_address($purl);
+
+        //printData($results);
+
+        //purl is invalid
+        if(!$results){
+            return redirect()->to('/');
+        }
+
+        //purl is ok. Account confirmation success
+        echo view('user/show_confirmation_final_message');
+
+        //echo 'Okeijo';
+
+        
+
     }
 
 

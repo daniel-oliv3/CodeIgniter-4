@@ -481,7 +481,7 @@ Verificar se existe o purl na base de dados.
 
 - http://localhost/CodeIgniter-4/app_33/public/index.php/login_frm
 
-
+- http://localhost/CodeIgniter-4/app_33/public/index.php/verify_email/baEohSzlJvPV
 
 
 
