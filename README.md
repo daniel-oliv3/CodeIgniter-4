@@ -476,7 +476,10 @@ Verificar se existe o purl na base de dados.
     - Sim: Apresenta uma mensagem a indicar que a conta foi confirmada
 ```
 
+### 33 - CI AUTH PÁGINA DE CONFIRMAÇÃO DA NOVA CONTA DE USUÁRIO
+- Ex: app_33
 
+- http://localhost/CodeIgniter-4/app_33/public/index.php/login_frm
 
 
 
