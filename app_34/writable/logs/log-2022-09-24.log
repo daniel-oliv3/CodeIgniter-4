@@ -1,0 +1,14 @@
+CRITICAL - 2022-09-24 10:08:40 --> Invalid file: userbar.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('userbar.php')
+ 2 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('userbar', null, true)
+ 3 APPPATH\Views\layouts\main\main_layout.php(15): CodeIgniter\View\View->include('userbar')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layouts\\main\\main_layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/main/main_layout', [], true)
+ 7 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('main/home', [], true)
+ 8 APPPATH\Controllers\Main.php(14): view('main/home')
+ 9 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Main->index()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -483,6 +483,10 @@ Verificar se existe o purl na base de dados.
 
 - http://localhost/CodeIgniter-4/app_33/public/index.php/verify_email/baEohSzlJvPV
 
+### 34 - CI AUTH FORMULÁRIO PARA RECUPERAR PASSWORD
+- Ex: app_34
+
+- http://localhost/CodeIgniter-4/app_34/public/index.php/login_frm
 
 
 
