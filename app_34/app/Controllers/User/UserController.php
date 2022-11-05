@@ -235,7 +235,7 @@ class UserController extends BaseController
     /* RECOVER PASSWORD                                     */
     /*======================================================*/
     public function recover_password_frm(){
-        echo 'Sapup3';
+        return view('user/recover_password_frm');
     }
 
     /*======================================================*/

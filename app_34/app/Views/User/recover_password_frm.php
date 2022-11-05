@@ -10,19 +10,19 @@
                 <h3 class="text-center">Recuperar Senha</h3>
                 <hr>
 
-                <?= form_open('recover_password_submit', ['novalidate' => true]) ?>
+                <?= form_open('user_recover_password_submit', ['novalidate' => true]) ?>
 
                 <div class="mb-3">
-                    <label for="text_username" class="form-label">Qual é o seu nome de usuário?</label>
+                    <label for="text_username" class="form-label">Esqueci minha senha ? Qual é o seu nome de usuário?</label>
                     <input type="email" name="text_username" id="text-username" class="form-control" placeholder="Digite seu Email" required value="<?= old('text_username') ?>">
                     <?php if(!empty($validation_errors)): ?>
                         <span class="text-danger fst-italic"><small><?= show_form_errors('text_username', $validation_errors) ?></small></span>
                     <?php endif; ?>  
                 </div>
 
-                <div class="mb-3 text-center">
-                    <a href="<?= site_url('user_recover_password') ?>">Esqueci a minha senha</a>
-                    <input type="submit" value="Login" class="btn btn-primary w-50">
+                <div class="mt-5 mb-3 text-center">
+                    <a href="<?= site_url('/') ?>" class="btn btn-primary">Cancelar</a>
+                    <input type="submit" value="Recuperar" class="btn btn-primary">
                 </div>
 
                 <?= form_close() ?>  

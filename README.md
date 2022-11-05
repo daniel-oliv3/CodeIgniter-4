@@ -19,6 +19,8 @@
 - **CodeIgniter** para projetos de média escala.
 - Laravel para média e grande escala.
 
+- Links Extras: https://pt.wikipedia.org/wiki/CodeIgniter
+- Documentação - https://codeigniter.com/user_guide/index.html
 
 ### 2 - COMO PREPARAR UM AMBIENTE DE DESENVOLVIMENTO PARA PHP.
 ## CodeIgniter.
