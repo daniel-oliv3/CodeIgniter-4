@@ -9,13 +9,13 @@ class UserController extends BaseController
 {
     public function index()
     {
-        //Index 
-               
-        
+        //Index    
     }
 
+
+
     /*======================================================*/
-    // LOGIN
+    /* LOGIN                                                */
     /*======================================================*/
     public function login_frm(){
 
@@ -95,9 +95,11 @@ class UserController extends BaseController
         session()->remove('user');
         return redirect()->to('/');
     }
+
     
+
     /*======================================================*/
-    // NEW USER ACCOUNT
+    /* NEW USER ACCOUNT                                     */
     /*======================================================*/
     public function new_user_account_frm(){
         // check if there are validation erros is session (verifique se há erros de validação é sessão)
@@ -108,7 +110,6 @@ class UserController extends BaseController
 
         echo view('user/new_user_account_frm', $data);
     }
-
 
     /*======================================================*/
     public function new_user_account_submit(){
@@ -214,7 +215,7 @@ class UserController extends BaseController
         $user = new UserModel();
         $results = $user->check_confirm_email_address($purl);
 
-        //printData($results);
+
 
         //purl is invalid
         if(!$results){
@@ -224,11 +225,44 @@ class UserController extends BaseController
         //purl is ok. Account confirmation success
         echo view('user/show_confirmation_final_message');
 
-        //echo 'Okeijo';
-
         
 
     }
+
+
+
+    /*======================================================*/
+    /* RECOVER PASSWORD                                     */
+    /*======================================================*/
+    public function recover_password_frm(){
+        echo 'Sapup3';
+    }
+
+    /*======================================================*/
+    public function recover_password_submit(){
+        echo 'Submit Okay';
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     /*======================================================*/

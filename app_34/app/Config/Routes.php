@@ -48,6 +48,9 @@ $routes->get('new_user_account_frm',          'User\UserController::new_user_acc
 $routes->post('new_user_account_submit',      'User\UserController::new_user_account_submit');
 $routes->get('verify_email/(:alphanum)',      'User\UserController::verify_email/$1');
 
+$routes->get('user_recover_password',         'User\UserController::recover_password_frm');
+$routes->post('user_recover_password_submit', 'User\UserController::recover_password_submit');
+
 $routes->get('area1/',                       'Main::area1');
 $routes->get('area2/',                       'Main::area2');
 $routes->get('area3/',                       'Main::area3');

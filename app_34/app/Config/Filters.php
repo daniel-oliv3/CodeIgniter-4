@@ -83,7 +83,7 @@ class Filters extends BaseConfig
         ],
         'user_is_logged_in_filter' => [
             'before' => [ 
-                'login_frm', 'new_user_account_frm', //'reset_password_frm'
+                'login_frm', 'new_user_account_frm', 'user_recover_password'
             ]
             ],
             'user_is_admin' => [
