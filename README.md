@@ -496,6 +496,14 @@ Verificar se existe o purl na base de dados.
 
 - http://localhost/CodeIgniter-4/app_35/public/index.php/login_frm
 
+```txt
+Validação do formulário
+    - Email válido
+
+Verificar se o usuário existe na base de dados
+    - Não: Redirecionar para home
+    - Sim: Criar um purl, adicionar á db, enviar um email com purl e apresentar a mensagem
+```
 
 
 

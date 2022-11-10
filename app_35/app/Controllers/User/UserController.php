@@ -235,12 +235,45 @@ class UserController extends BaseController
     /* RECOVER PASSWORD                                     */
     /*======================================================*/
     public function recover_password_frm(){
-        return view('user/recover_password_frm');
+        // check if there are validation erros is session (verifique se há erros de validação é sessão)
+        $data = [];
+        if(session()->has('validation_errors')){
+            $data['validation_errors'] = session()->getFlashdata('validation_errors');
+        }
+
+        return view('user/recover_password_frm', $data);
     }
 
     /*======================================================*/
     public function recover_password_submit(){
-        echo 'Submit Okay';
+        if($this->request->getMethod() != 'post'){
+            return redirect()->to('/');
+        }
+
+        /* Validação do formulário */
+        $validation = $this->validate([
+            'text_username' => [
+                'label' => 'Username',
+                'rules' => 'required|valid_email',
+                'errors' => [
+                    'required' => 'O compo {field} é de preenchimento obrigátorio.',
+                    'valid_email' => 'O compo {field} tem que ser um email válido.'
+                ]
+            ],
+        ]);
+
+        // Ckeck if validation has failed (Verifique se a validação falhou)
+        if(!$validation){
+            return redirect()
+                ->back()
+                ->withInput()
+                ->with('validation_errors', $this->validator->getErrors());
+        }
+
+        echo 'ok!';
+
+        //Check if username already exists in database/ Verifique se o nome de usuário já existe no banco de dados
+        //$user = new UserModel();
     }
 
 
