@@ -491,8 +491,10 @@ Verificar se existe o purl na base de dados.
 - http://localhost/CodeIgniter-4/app_34/public/index.php/login_frm
 
 
+### 35 - CI AUTH 035 PREPARAÇÃO PARA RECUPERAR PASSWORD
+- Ex: app_35
 
-
+- http://localhost/CodeIgniter-4/app_35/public/index.php/login_frm
 
 
 
