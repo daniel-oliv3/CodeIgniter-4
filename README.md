@@ -503,6 +503,11 @@ Validação do formulário
 Verificar se o usuário existe na base de dados
     - Não: Redirecionar para home
     - Sim: Criar um purl, adicionar á db, enviar um email com purl e apresentar a mensagem
+
+Verificar se o usuário está em condições de recuperar a senha
+    - Verifica se o usuário tem conta na base de dados
+    - Email existe, 
+        - ativo = 1
 ```
 
 

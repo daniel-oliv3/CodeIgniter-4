@@ -270,10 +270,12 @@ class UserController extends BaseController
                 ->with('validation_errors', $this->validator->getErrors());
         }
 
-        echo 'ok!';
 
         //Check if username already exists in database/ Verifique se o nome de usuário já existe no banco de dados
-        //$user = new UserModel();
+        $username = $this->request->getPost("text_username");
+        $user = new UserModel();  
+        $results = $user->check_if_user_can_recover_password($username);
+         
     }
 
 

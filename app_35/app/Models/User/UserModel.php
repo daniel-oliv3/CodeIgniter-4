@@ -140,6 +140,13 @@ class UserModel extends Model
     }
 
     /*============================================================================*/
+    public function check_if_user_can_recover_password($username){
+        //check if the user is in conditions to recover password/verificar se o usuário está em condições de recuperar a senha
+        //verifica se o usuario tem conta na base de dados
+        //email existe, ativo = 1
+    }
+
+    /*============================================================================*/
     private function aes_encrypt($field_value){
         return "AES_ENCRYPT($field_value, UNHEX(SHA2('".AES_KEY."', 512)))";
     }
