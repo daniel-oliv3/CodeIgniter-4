@@ -7,6 +7,16 @@ use App\Models\User\UserModel;
 
 class UserController extends BaseController
 {
+    //
+    protected $userModel;
+
+    public function __construct()
+    {
+
+        $this->userModel = new UserModel();
+
+    }
+
     public function index()
     {
         //Index    
@@ -60,18 +70,18 @@ class UserController extends BaseController
         // Ckeck if validation has failed (Verifique se a validação falhou)
         if(!$validation){
             return redirect()
-                ->back()
-                ->withInput()
-                ->with('validation_errors', $this->validator->getErrors());
+            ->back()
+            ->withInput()
+            ->with('validation_errors', $this->validator->getErrors());
         }
 
-        $users = new UserModel();
+        // $users = new UserModel();
 
         $username = $this->request->getPost('text_username');
         $passwrd = $this->request->getPost('text_passwrd');
 
         //Check if login is ok
-        $results = $users->verify_login($username, $passwrd);
+        $results = $this->userModel->verify_login($username, $passwrd);
 
         if(!$results['status']){
             // login error
@@ -80,7 +90,7 @@ class UserController extends BaseController
 
         /* Get user available data */
         $id_user = $results['id_user'];
-        $results = $users->get_user_data($id_user);
+        $results = $this->userModel->get_user_data($id_user);
 
         /* Create user session */
         session()->set('user', $results[0]);
@@ -153,14 +163,14 @@ class UserController extends BaseController
         // Ckeck if validation has failed (Verifique se a validação falhou)
         if(!$validation){
             return redirect()
-                ->back()
-                ->withInput()
-                ->with('validation_errors', $this->validator->getErrors());
+            ->back()
+            ->withInput()
+            ->with('validation_errors', $this->validator->getErrors());
         }
 
         //Check if username already exists in database/ Verifique se o nome de usuário já existe no banco de dados
-        $user = new UserModel();
-        $result = $user->check_if_user_account_already_exists($this->request->getPost('text_username'));
+        // $user = new UserModel();
+        $result = $this->userModel->check_if_user_account_already_exists($this->request->getPost('text_username'));
 
         if($result){
             die('Já existe uma conta com o mesmo email!');
@@ -185,11 +195,11 @@ class UserController extends BaseController
 
         $message = 
         '
-            <h3>CI Auth - Confirmação de conta de usuário</h3>
-            <p>Para concluir o seu registro, clique no link abaixo.</p>
-            <p>
-                <a href="' . $purl . '">Confirmar email</a>
-            </p>
+        <h3>CI Auth - Confirmação de conta de usuário</h3>
+        <p>Para concluir o seu registro, clique no link abaixo.</p>
+        <p>
+        <a href="' . $purl . '">Confirmar email</a>
+        </p>
         ';
         $email->setMessage($message);
         $email->send();
@@ -206,14 +216,14 @@ class UserController extends BaseController
 
     /*======================================================*/
     public function verify_email($purl = null){
-        
+
         //Check if is purl valid
         if(empty($purl) || strlen($purl) != 12){
             return redirect()->to('/');
         }
 
-        $user = new UserModel();
-        $results = $user->check_confirm_email_address($purl);
+        // $user = new UserModel();
+        $results = $this->userModel->check_confirm_email_address($purl);
 
 
 
