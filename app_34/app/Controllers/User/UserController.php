@@ -12,7 +12,7 @@ class UserController extends BaseController
 
     public function __construct()
     {
-
+        // create instance
         $this->userModel = new UserModel();
 
     }
