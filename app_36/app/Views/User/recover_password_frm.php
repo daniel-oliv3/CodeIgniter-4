@@ -17,7 +17,10 @@
                     <input type="email" name="text_username" id="text-username" class="form-control" placeholder="Digite seu Email" required value="<?= old('text_username') ?>">
                     <?php if(!empty($validation_errors)): ?>
                         <span class="text-danger fst-italic"><small><?= show_form_errors('text_username', $validation_errors) ?></small></span>
-                    <?php endif; ?>  
+                    <?php endif; ?>
+                    <?php if(!empty($server_error)): ?>
+                        <span class="text-danger fst-italic"><small><?= show_form_errors('text_username', $server_error) ?></small></span>
+                    <?php endif; ?>   
                 </div>
 
                 <div class="mt-5 mb-3 text-center">

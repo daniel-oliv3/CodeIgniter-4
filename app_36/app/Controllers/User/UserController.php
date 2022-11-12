@@ -237,8 +237,15 @@ class UserController extends BaseController
     public function recover_password_frm(){
         // check if there are validation erros is session (verifique se há erros de validação é sessão)
         $data = [];
+
+        // Form validation errors
         if(session()->has('validation_errors')){
             $data['validation_errors'] = session()->getFlashdata('validation_errors');
+        }
+
+        // Server validation errors
+        if(session()->has('server_error')){
+            $data['server_error'] = session()->getFlashdata('server_error');
         }
 
         return view('user/recover_password_frm', $data);
@@ -276,8 +283,16 @@ class UserController extends BaseController
         $user = new UserModel();  
         $results = $user->check_if_user_can_recover_password($username);
 
-        printData($results);
+        //check results
+        if(!$results['status']){
+            return redirect()
+                ->back()
+                ->withInput()
+                ->with('server_error', ['text_username' => 'O usuário' . $username . ' não está registrado na aplicação.']);
+        }
          
+        echo "Oqueijo!";
+
     }
 
 
