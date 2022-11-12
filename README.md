@@ -515,6 +515,11 @@ Verificar se o usuário está em condições de recuperar a senha
 
 - http://localhost/CodeIgniter-4/app_36/public/index.php/login_frm
 
+- Select
+```php
+SELECT AES_DECRYPT(username, UNHEX(SHA2('sCAI7xPKtgwxfWLBcuvTU5tEnGJYENce', 512))) usuario, purl, active FROM users
+```
+
 
 
 

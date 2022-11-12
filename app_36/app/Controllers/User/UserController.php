@@ -275,6 +275,8 @@ class UserController extends BaseController
         $username = $this->request->getPost("text_username");
         $user = new UserModel();  
         $results = $user->check_if_user_can_recover_password($username);
+
+        printData($results);
          
     }
 

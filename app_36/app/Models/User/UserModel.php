@@ -147,10 +147,17 @@ class UserModel extends Model
         ];
 
         $db = db_connect();
-        $results = $db->query("SELECT id FROM users WHERE purl = :purl:", $params)->getResultObject();
+        $results = $db->query("SELECT id FROM users WHERE {$this->aes_encrypt(':username:')} = username AND active = 1", $params)->getResultObject();
         if($db->affectedRows() == 0){
-            return false;
+            return [
+                'status' => false,
+                'id_user' => null
+            ];
         }
+        return [
+            'status' => true,
+            'id_user' => $results[0]->id
+        ];
     }
 
     /*============================================================================*/
