@@ -141,9 +141,16 @@ class UserModel extends Model
 
     /*============================================================================*/
     public function check_if_user_can_recover_password($username){
-        //check if the user is in conditions to recover password/verificar se o usuário está em condições de recuperar a senha
-        //verifica se o usuario tem conta na base de dados
-        //email existe, ativo = 1
+        //check if the user is in conditions to recover password
+        $params = [
+            'username' => $username
+        ];
+
+        $db = db_connect();
+        $results = $db->query("SELECT id FROM users WHERE purl = :purl:", $params)->getResultObject();
+        if($db->affectedRows() == 0){
+            return false;
+        }
     }
 
     /*============================================================================*/

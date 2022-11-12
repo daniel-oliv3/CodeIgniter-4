@@ -510,7 +510,10 @@ Verificar se o usuário está em condições de recuperar a senha
         - ativo = 1
 ```
 
+### 36 - CI AUTH VERIFICAÇÕES NA BASE DE DADOS
+- Ex: app_36
 
+- http://localhost/CodeIgniter-4/app_36/public/index.php/login_frm
 
 
 
