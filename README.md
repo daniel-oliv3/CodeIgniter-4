@@ -520,7 +520,10 @@ Verificar se o usuário está em condições de recuperar a senha
 SELECT AES_DECRYPT(username, UNHEX(SHA2('sCAI7xPKtgwxfWLBcuvTU5tEnGJYENce', 512))) usuario, purl, active FROM users
 ```
 
+### 37 - CI AUTH ENVIO DE EMAIL PARA RECUPERAR A PASSWORD
+- Ex: app_37
 
+- http://localhost/CodeIgniter-4/app_37/public/index.php/login_frm
 
 
 
