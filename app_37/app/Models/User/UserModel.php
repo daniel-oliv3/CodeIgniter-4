@@ -161,6 +161,20 @@ class UserModel extends Model
     }
 
     /*============================================================================*/
+    public function set_user_recover_password($id_user){
+
+        $purl = create_hash(12);
+
+        $params = [
+            'id_user' => $id_user,
+            'purl' => $purl,
+        ];
+
+        $db = db_connect();
+        $db->query("UPDATE users SET purl = :purl: WHERE id = :id_user:", $params);
+    }
+
+    /*============================================================================*/
     private function aes_encrypt($field_value){
         return "AES_ENCRYPT($field_value, UNHEX(SHA2('".AES_KEY."', 512)))";
     }

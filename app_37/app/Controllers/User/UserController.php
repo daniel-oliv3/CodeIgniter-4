@@ -291,7 +291,10 @@ class UserController extends BaseController
                 ->with('server_error', ['text_username' => 'O usuário' . $username . ' não está registrado na aplicação.']);
         }
          
-        echo "Oqueijo!";
+        printData($results);
+
+        /* Initiate user recover password */
+        $results = $user->set_user_recover_password($results['id_user']);
 
     }
 
