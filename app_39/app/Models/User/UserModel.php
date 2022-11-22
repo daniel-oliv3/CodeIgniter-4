@@ -180,6 +180,11 @@ class UserModel extends Model
     }
 
     /*============================================================================*/
+    public function check_is_purl_exists_reset_password(){
+
+    }
+
+    /*============================================================================*/
     private function aes_encrypt($field_value){
         return "AES_ENCRYPT($field_value, UNHEX(SHA2('".AES_KEY."', 512)))";
     }

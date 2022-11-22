@@ -541,7 +541,11 @@ Verificar se o purl está associado a uma conta de utilizador
 - Ex: app_39
 
 - http://localhost/CodeIgniter-4/app_39/public/index.php/login_frm
+- laragon/bin/sendmail/output
 
+```
+http://localhost/CodeIgniter-4/app_39/public/index.php/user_recover_password_check/hfOSGnoVgdYR
+```
 
 
 

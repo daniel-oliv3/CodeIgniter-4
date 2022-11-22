@@ -326,9 +326,9 @@ class UserController extends BaseController
             return redirect()->to("/");
         }
 
-        die("Ok! Sapup3 R");
-
-        /* */
+        /*Check if purl is valid in the database */
+        $user = new UserModel();
+        $results = $user->check_is_purl_exists_reset_password($purl);
     }
 
 
