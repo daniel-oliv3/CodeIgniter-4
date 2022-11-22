@@ -329,6 +329,13 @@ class UserController extends BaseController
         /*Check if purl is valid in the database */
         $user = new UserModel();
         $results = $user->check_is_purl_exists_reset_password($purl);
+
+        if($results['status'] == 'error'){
+            die("o purl é inválido");
+        }
+
+        $id_user = $results['id_user'];
+        echo "ID user: $id_user";
     }
 
 

@@ -180,8 +180,26 @@ class UserModel extends Model
     }
 
     /*============================================================================*/
-    public function check_is_purl_exists_reset_password(){
+    public function check_is_purl_exists_reset_password($purl){
+         $params = [
+            'purl' => $purl,
+         ];
 
+         $db = db_connect();
+         $results = $db->query("SELECT id FROM users WHERE purl = :purl: AND active = 1", $params)->getResultObject();
+         
+         //printData($results);
+         if($db->affectedRows()!= 0){
+            //If success
+            return [
+                'status' => 'success',
+                'id_user' => $results[0]->id,
+            ];
+         } else {
+            return [
+                'status' => 'error'
+            ];
+         }  
     }
 
     /*============================================================================*/
