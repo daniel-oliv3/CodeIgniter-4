@@ -537,8 +537,10 @@ Verificar se o purl está associado a uma conta de utilizador
     Sim: Apresenta uma página com o formulário para definir a nova senha
 ```
 
+### 39 - CI AUTH ID DO CLIENTE PARA ALTERAR A PASSWORD
+- Ex: app_39
 
-
+- http://localhost/CodeIgniter-4/app_39/public/index.php/login_frm
 
 
 
