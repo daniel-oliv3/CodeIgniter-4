@@ -315,10 +315,13 @@ class UserController extends BaseController
         $email->setMessage($message);
         $email->send();
 
+        //display message about recover password email sent to the user
+        $data['username'] = $username;
+        return view('user/recover_password_email_send', $data);
     }
 
 public function recover_password_check($purl){
-    die('ok');
+    die('Sapup3 na Área!');
 }
 
 
