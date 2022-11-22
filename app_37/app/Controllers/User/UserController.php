@@ -291,15 +291,35 @@ class UserController extends BaseController
                 ->with('server_error', ['text_username' => 'O usuário' . $username . ' não está registrado na aplicação.']);
         }
          
-        printData($results);
+        //printData($results);
 
         /* Initiate user recover password */
-        $results = $user->set_user_recover_password($results['id_user']);
+        $purl_code = $user->set_user_recover_password($results['id_user'])['purl'];
+        $purl = site_url('user_recover_password_check/' . $purl_code);
+
+        $email = \Config\Services::email();
+        $email->setFrom('ci_auth@ci_auth.com', 'CI Auth');
+        $email->setTo($username);
+
+        $email->setSubject('CI Auth - Recuperação de Senha');
+        $email->setMailType('html');
+
+        $message = 
+        '
+            <h3>CI Auth - Recuperação de Senha de Usuário</h3>
+            <p>Para concluir o processo de recuperação, clique no link abaixo.</p>
+            <p>
+                <a href="' . $purl . '">Recuperar Senha</a>
+            </p>
+        ';
+        $email->setMessage($message);
+        $email->send();
 
     }
 
-
-
+public function recover_password_check($purl){
+    die('ok');
+}
 
 
 

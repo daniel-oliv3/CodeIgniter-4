@@ -172,6 +172,11 @@ class UserModel extends Model
 
         $db = db_connect();
         $db->query("UPDATE users SET purl = :purl: WHERE id = :id_user:", $params);
+
+        return [
+            'status' => 'success',
+            'purl' => $purl,
+        ];
     }
 
     /*============================================================================*/
