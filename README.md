@@ -526,7 +526,10 @@ SELECT AES_DECRYPT(username, UNHEX(SHA2('sCAI7xPKtgwxfWLBcuvTU5tEnGJYENce', 512)
 - http://localhost/CodeIgniter-4/app_37/public/index.php/login_frm
 
 
+### 38 - CI AUTH RECEBER O PEDIDO DE ALTERAÇÃO DA PASSWORD
+- Ex: app_38
 
+- http://localhost/CodeIgniter-4/app_38/public/index.php/login_frm
 
 
 
