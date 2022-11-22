@@ -320,9 +320,16 @@ class UserController extends BaseController
         return view('user/recover_password_email_send', $data);
     }
 
-public function recover_password_check($purl){
-    die('Sapup3 na Área!');
-}
+    /*======================================================*/
+    public function recover_password_check($purl){
+        if(empty($purl) || strlen($purl) != 12){
+            return redirect()->to("/");
+        }
+
+        die("Ok! Sapup3 R");
+
+        /* */
+    }
 
 
 

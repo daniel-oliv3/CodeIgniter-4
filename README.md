@@ -531,7 +531,11 @@ SELECT AES_DECRYPT(username, UNHEX(SHA2('sCAI7xPKtgwxfWLBcuvTU5tEnGJYENce', 512)
 
 - http://localhost/CodeIgniter-4/app_38/public/index.php/login_frm
 
-
+```txt
+Verificar se o purl está associado a uma conta de utilizador
+    Não: Vai para a home page
+    Sim: Apresenta uma página com o formulário para definir a nova senha
+```
 
 
 
