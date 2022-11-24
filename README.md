@@ -547,8 +547,10 @@ Verificar se o purl está associado a uma conta de utilizador
 http://localhost/CodeIgniter-4/app_39/public/index.php/user_recover_password_check/hfOSGnoVgdYR
 ```
 
+### 40 - CI AUTH MENSAGEM DE ERRO COM FONTAWESOME
+- Ex: app_40
 
-
+- http://localhost/CodeIgniter-4/app_40/public/index.php/login_frm
 
 
 
