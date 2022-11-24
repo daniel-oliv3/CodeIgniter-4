@@ -331,15 +331,18 @@ class UserController extends BaseController
         $results = $user->check_is_purl_exists_reset_password($purl);
 
         if($results['status'] == 'error'){
-            die("o purl é inválido");
+            return redirect()->to("user_recover_password_invalid_purl/");
         }
 
         $id_user = $results['id_user'];
         echo "ID user: $id_user";
     }
 
-
-
+    /*======================================================*/
+    public function recover_password_invalid_purl(){
+        //display a page with the information that the purl code is invalid (expired)
+        return view('user/recover_password_invalid_purl');
+    }
 
 
 

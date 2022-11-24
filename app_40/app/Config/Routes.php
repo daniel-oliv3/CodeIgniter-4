@@ -52,6 +52,8 @@ $routes->get('user_recover_password',         'User\UserController::recover_pass
 $routes->post('user_recover_password_submit', 'User\UserController::recover_password_submit');
 
 $routes->get('user_recover_password_check/(:alphanum)',   'User\UserController::recover_password_check/$1');
+$routes->get('user_recover_password_invalid_purl',        'User\UserController::recover_password_invalid_purl');
+
 
 $routes->get('area1/',                       'Main::area1');
 $routes->get('area2/',                       'Main::area2');
