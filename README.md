@@ -560,7 +560,10 @@ http://localhost/CodeIgniter-4/app_39/public/index.php/user_recover_password_che
 - https://fontawesome.com/download
 
 
+### 41 -  CI AUTH OPENSSL ENCRYPT E DECRYPT
+- Ex: app_41
 
+- http://localhost/CodeIgniter-4/app_41/public/index.php/login_frm
 
 
 
