@@ -10,7 +10,7 @@
 
                 <h1 class="text-center text-danger"><i class="fa-regular fa-circle-xmark"></i></h1>
 
-                <p class="text-center">Código de recuperação de senha inválido ou expirado</p>
+                <p class="text-center">Código de recuperação de senha é inválido ou expirado</p>
        
                 <div class="text-center mt-3">
                     <a href="<?= site_url('/') ?>" class="btn btn-primary w-50">Voltar</a>

@@ -334,8 +334,10 @@ class UserController extends BaseController
             return redirect()->to("user_recover_password_invalid_purl/");
         }
 
-        $id_user = $results['id_user'];
-        echo "ID user: $id_user";
+        $data['id_user'] = $results['id_user'];
+        
+        return view('user/recover_password_frm', $data);
+
     }
 
     /*======================================================*/
