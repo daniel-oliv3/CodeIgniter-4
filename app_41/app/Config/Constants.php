@@ -96,3 +96,10 @@ define('EVENT_PRIORITY_HIGH', 10);
 /* ======= / ======= */
 define('APP_NAME', 'CI_AUTH');
 define('AES_KEY', '3y8FHYGfThUpcvE0AC25Sj5OlsD17Ab8');
+
+
+/* ======= / ======= */
+define('OPENSSL_KEY', 'Y5pePK5yWpr7XzPz0eVyDQEUv4ESeLvl');
+define('OPENSSL_IV', '0x9O33oC1NR7zufm');
+
+

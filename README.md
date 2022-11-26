@@ -447,7 +447,7 @@ $email->send();
 - http://localhost/CodeIgniter-4/app_31/public/index.php/login_frm
 
 ```sql
-SELECT AES_DECRYPT(username, UNHEX(SHA2('sCAI7xPKtgwxfWLBcuvTU5tEnGJYENce', 512))) usuario, purl FROM users
+SELECT AES_DECRYPT(username, UNHEX(SHA2('3y8FHYGfThUpcvE0AC25Sj5OlsD17Ab8', 512))) usuario, purl FROM users
 ```
 
 ```txt
@@ -517,7 +517,7 @@ Verificar se o usuário está em condições de recuperar a senha
 
 - Select
 ```php
-SELECT AES_DECRYPT(username, UNHEX(SHA2('sCAI7xPKtgwxfWLBcuvTU5tEnGJYENce', 512))) usuario, purl, active FROM users
+SELECT AES_DECRYPT(username, UNHEX(SHA2('3y8FHYGfThUpcvE0AC25Sj5OlsD17Ab8', 512))) usuario, purl, active FROM users
 ```
 
 ### 37 - CI AUTH ENVIO DE EMAIL PARA RECUPERAR A PASSWORD
@@ -568,10 +568,14 @@ http://localhost/CodeIgniter-4/app_39/public/index.php/user_recover_password_che
 ```
 http://localhost/CodeIgniter-4/app_41/public/index.php/user_recover_password_check/hfOSGnoVgdYR
 ```
-
-
-
-
+- New
+```
+http://localhost/CodeIgniter-4/app_41/public/index.php/user_recover_password_check/PYAZcTECXVGI
+```
+- Open SSL Encrypt
+```
+php -m
+```
 
 
 ##

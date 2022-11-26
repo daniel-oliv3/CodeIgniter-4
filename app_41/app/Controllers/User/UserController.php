@@ -336,7 +336,7 @@ class UserController extends BaseController
 
         $data['id_user'] = $results['id_user'];
         
-        return view('user/recover_password_frm', $data);
+        return view('user/recover_password_define_password_frm', $data);
 
     }
 
@@ -347,7 +347,10 @@ class UserController extends BaseController
     }
 
 
-
+    /*======================================================*/
+    public function user_recover_password_define_submit(){
+        die('Post!');
+    }
 
 
 
