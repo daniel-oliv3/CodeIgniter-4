@@ -1,0 +1,24 @@
+CRITICAL - 2022-11-10 07:15:42 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Config\Routes.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-10 07:15:44 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Config\Routes.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-10 07:15:45 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Config\Routes.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-10 07:15:49 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Config\Routes.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-10 07:16:04 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Config\Routes.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-10 07:16:05 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Config\Routes.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-10 07:16:12 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Config\Routes.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-10 07:17:02 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Config\Routes.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

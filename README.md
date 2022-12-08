@@ -577,6 +577,19 @@ http://localhost/CodeIgniter-4/app_41/public/index.php/user_recover_password_che
 php -m
 ```
 
+### 42 - CI AUTH OPENSSL ENCRYPT E DECRYPT PARTE 2
+- Ex: app_42
+
+- http://localhost/CodeIgniter-4/app_42/public/index.php/login_frm
+
+
+
+
+
+
+
+
+
 
 ##
 

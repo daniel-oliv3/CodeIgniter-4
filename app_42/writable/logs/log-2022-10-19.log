@@ -1,0 +1,63 @@
+CRITICAL - 2022-10-19 07:04:00 --> Call to undefined method App\Models\User\UserModel::check_if_user_account_already_exists
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\User\UserController.php(161): CodeIgniter\Model->__call('check_if_user_account_already_exists', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User\UserController->new_user_account_submit()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 07:05:58 --> Call to undefined method App\Models\User\UserModel::check_if_user_account_already_exists
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\User\UserController.php(161): CodeIgniter\Model->__call('check_if_user_account_already_exists', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User\UserController->new_user_account_submit()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 07:06:28 --> Call to undefined method App\Models\User\UserModel::check_if_user_account_already_exists
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\User\UserController.php(161): CodeIgniter\Model->__call('check_if_user_account_already_exists', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User\UserController->new_user_account_submit()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 07:07:34 --> Call to undefined method App\Models\User\UserModel::check_if_user_account_already_exists
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\User\UserController.php(161): CodeIgniter\Model->__call('check_if_user_account_already_exists', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User\UserController->new_user_account_submit()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 07:08:46 --> Call to undefined method App\Models\User\UserModel::check_if_user_account_already_exists
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\User\UserController.php(161): CodeIgniter\Model->__call('check_if_user_account_already_exists', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User\UserController->new_user_account_submit()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 07:13:30 --> Call to undefined method App\Models\User\UserModel::check_if_user_account_already_exists
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\User\UserController.php(161): CodeIgniter\Model->__call('check_if_user_account_already_exists', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User\UserController->new_user_account_submit()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 07:15:02 --> Call to undefined method App\Models\User\UserModel::check_if_user_account_already_exists
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\User\UserController.php(161): CodeIgniter\Model->__call('check_if_user_account_already_exists', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User\UserController->new_user_account_submit()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 07:16:07 --> Call to undefined method App\Models\User\UserModel::check_if_user_account_already_exists
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\User\UserController.php(161): CodeIgniter\Model->__call('check_if_user_account_already_exists', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User\UserController->new_user_account_submit()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 07:31:09 --> Call to undefined method App\Models\User\UserModel::check_if_user_account_already_exists
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\User\UserController.php(161): CodeIgniter\Model->__call('check_if_user_account_already_exists', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\User\UserController->new_user_account_submit()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
