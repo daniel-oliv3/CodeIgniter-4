@@ -35,7 +35,9 @@ function aes_encrypt($value){
 function aes_decrypt($value){
     //Check if value if length even
     if(strlen($value) % 2 != 0){
-        return null;
+        return false;
+    } else {
+        return openssl_decrypt(hex2bin($value), 'aes-256-cbc', OPENSSL_KEY, OPENSSL_RAW_DATA, OPENSSL_IV);
     }
 }
 

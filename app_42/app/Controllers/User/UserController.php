@@ -349,7 +349,16 @@ class UserController extends BaseController
 
     /*======================================================*/
     public function user_recover_password_define_submit(){
-        die('Post!');
+        
+        //Change user password after recover
+        if(!empty($this->request->getPost('id_user'))){
+            $id_user = aes_decrypt($this->request->getPost('id_user'));
+            if(is_bool($id_user) && !$id_user){
+                die('id_user é inválido!');
+            }
+        }
+
+        echo "ID user = $id_user";
     }
 
 
