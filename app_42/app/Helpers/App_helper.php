@@ -31,6 +31,14 @@ function aes_encrypt($value){
 }
 
 
+/*======================================================*/
+function aes_decrypt($value){
+    //Check if value if length even
+    if(strlen($value) % 2 != 0){
+        return null;
+    }
+}
+
 
 
 /*======================================================*/

@@ -582,8 +582,14 @@ php -m
 
 - http://localhost/CodeIgniter-4/app_42/public/index.php/login_frm
 
+```txt
+- Verificar se o id_user existe no post e se é válido
+- Validar o formulário
 
-
+- Formulário Ok?
+    - Atualizar o password na base de dados
+    - Apresentar página de password alterada com sucesso
+```
 
 
 
