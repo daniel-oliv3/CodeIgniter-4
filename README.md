@@ -591,8 +591,10 @@ php -m
     - Apresentar página de password alterada com sucesso
 ```
 
+### 43 - CI AUTH VALIDAÇÃO DO FORMULÁRIO DE DEFINIÇÃO DA PASSWORDCI AUTH VALIDAÇÃO DO FORMULÁRIO DE DEFINIÇÃO DA PASSWORD
+- Ex: app_43
 
-
+- http://localhost/CodeIgniter-4/app_43/public/index.php/login_frm
 
 
 
