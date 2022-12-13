@@ -596,6 +596,26 @@ php -m
 
 - http://localhost/CodeIgniter-4/app_43/public/index.php/login_frm
 
+- Change user password after recover
+```
+http://localhost/CodeIgniter-4/app_43/public/index.php/user_recover_password_check/nEtyXTJLLSxA
+```
+
+**Form Validation - Available Rules**
+- Matches
+```txt
+Matches     | O valor deve corresponder ao valor do campo
+no parâmetro.|      matches[field]
+```
+- Doc: https://codeigniter.com/user_guide/libraries/validation.html?highlight=validation#available-rules
+
+
+
+
+
+
+
+
 
 
 

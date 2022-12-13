@@ -335,6 +335,11 @@ class UserController extends BaseController
         }
 
         $data['id_user'] = $results['id_user'];
+
+        //Check if there are validation errors
+        if(session()->has('validation_errors')){
+            $data['validation_errors'] = session()->getFlashdata('validation_errors');
+        }
         
         return view('user/recover_password_define_password_frm', $data);
 
@@ -350,15 +355,48 @@ class UserController extends BaseController
     /*======================================================*/
     public function user_recover_password_define_submit(){
         
-        //Change user password after recover
+        //check if id user exists and is valid
+        $id_user = null;
         if(!empty($this->request->getPost('id_user'))){
             $id_user = aes_decrypt($this->request->getPost('id_user'));
             if(is_bool($id_user) && !$id_user){
-                die('id_user é inválido!');
+                return redirect()->to('/');
             }
         }
+        /* Validação do formulário */
+        $validation = $this->validate([
+            'text_passwrd' => [
+                'label' => 'Password',
+                'rules' => 'required|min_length[6]|max_length[18]|regex_match[/(?=.*\d)(?=.*[a-z])(?=.*[A-Z])/]',
+                'errors' => [
+                    'required' => 'O compo {field} é de preenchimento obrigátorio.',
+                    'min_length' => 'O campo {field} tem que ter, no mínimo, {param} caracteres.',
+                    'max_length' => 'O campo {field} tem que ter, no máximo, {param} caracteres.',
+                    'regex_match' => 'A password tem que ter uma letra minúscula, uma maiúscula e um digito.'
+                ]
+            ],
+            'text_reapet_passwrd' => [
+                'label' => 'Repetir password',
+                'rules' => 'required|min_length[6]|max_length[18]|regex_match[/(?=.*\d)(?=.*[a-z])(?=.*[A-Z])/]|matches[text_passwrd]',
+                'errors' => [
+                    'required' => 'O compo {field} é de preenchimento obrigátorio.',
+                    'min_length' => 'O campo {field} tem que ter, no mínimo, {param} caracteres.',
+                    'max_length' => 'O campo {field} tem que ter, no máximo, {param} caracteres.',
+                    'regex_match' => 'A password tem que ter uma letra minúscula, uma maiúscula e um digito.',
+                    'matches' => 'As senhas não são iguais!',    
+                ]
+            ]
+        ]);
 
-        echo "ID user = $id_user";
+        // Ckeck if validation has failed (Verifique se a validação falhou)
+        if(!$validation){
+            return redirect()
+                ->back()
+                ->withInput()
+                ->with('validation_errors', $this->validator->getErrors());
+        }
+
+        $users = new UserModel();
     }
 
 

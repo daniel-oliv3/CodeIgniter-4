@@ -31,8 +31,8 @@
                 </div>                
 
                 <div class="mb-3 text-center">
-                    <a href="<?= site_url('/') ?>" class="btn btn-secundary">Inicio</a>
-                    <button type="submit" class="btn btn-secundary">Alterar</button>
+                    <a href="<?= site_url('/') ?>" class="btn btn-primary">Inicio</a>
+                    <button type="submit" class="btn btn-primary">Alterar</button>
                 </div>
 
                 <?= form_close() ?>  
