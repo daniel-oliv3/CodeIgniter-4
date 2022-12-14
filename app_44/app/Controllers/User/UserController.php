@@ -396,7 +396,13 @@ class UserController extends BaseController
                 ->with('validation_errors', $this->validator->getErrors());
         }
 
+        //Change user´s password
         $users = new UserModel();
+        $results = $users->update_user_passwrd($id_user, $this->request->getPost('text_passwrd'));
+        
+        if($results['status'] == 'success'){
+            return view('user/recover_password_define_password_success');
+        }
     }
 
 

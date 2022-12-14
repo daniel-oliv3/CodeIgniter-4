@@ -202,6 +202,33 @@ class UserModel extends Model
          }  
     }
 
+
+    /*============================================================================*/
+    public function update_user_passwrd($id, $passwrd){
+        $params = [
+            'id' => $id,
+            'passwrd' => password_hash($passwrd, PASSWORD_DEFAULT),
+        ];
+
+        $db = db_connect();
+        $db->query("UPDATE users SET passwrd = :passwrd: WHERE id = :id:", $params);
+        
+        if($db->affectedRows() != 0){
+            //If success
+            return [
+                'status' => 'success',
+            ];
+         } else {
+            return [
+                'status' => 'error'
+            ];
+         }
+    }
+
+
+
+
+
     /*============================================================================*/
     private function aes_encrypt($field_value){
         return "AES_ENCRYPT($field_value, UNHEX(SHA2('".AES_KEY."', 512)))";
