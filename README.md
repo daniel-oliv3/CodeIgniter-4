@@ -610,7 +610,10 @@ no parâmetro.|      matches[field]
 - Doc: https://codeigniter.com/user_guide/libraries/validation.html?highlight=validation#available-rules
 
 
+### 44 - CI AUTH FINALIZAÇÃO DA RECUPERAÇÃO DA PASSWORD
+- Ex: app_44
 
+- http://localhost/CodeIgniter-4/app_44/public/index.php/login_frm
 
 
 
