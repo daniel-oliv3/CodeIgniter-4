@@ -375,7 +375,7 @@ class UserController extends BaseController
                     'regex_match' => 'A password tem que ter uma letra minúscula, uma maiúscula e um digito.'
                 ]
             ],
-            'text_reapet_passwrd' => [
+            'text_repeat_passwrd' => [
                 'label' => 'Repetir password',
                 'rules' => 'required|min_length[6]|max_length[18]|regex_match[/(?=.*\d)(?=.*[a-z])(?=.*[A-Z])/]|matches[text_passwrd]',
                 'errors' => [
