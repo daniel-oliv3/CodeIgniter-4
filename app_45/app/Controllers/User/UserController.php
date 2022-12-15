@@ -25,6 +25,11 @@ class UserController extends BaseController
             $data['validation_errors'] = session()->getFlashdata('validation_errors');
         }
 
+        // Server validation errors(login error)
+        if(session()->has('server_error')){
+            $data['server_error'] = session()->getFlashdata('server_error');
+        }
+
         echo view('user/login_frm', $data);
     }
 
@@ -74,8 +79,11 @@ class UserController extends BaseController
         $results = $users->verify_login($username, $passwrd);
 
         if(!$results['status']){
-            // login error
-            die('Erro de login');
+        //login error (check results)
+            return redirect()
+                ->back()
+                ->withInput()
+                ->with('server_error', 'Nome ou Senha incorreto!');
         }
 
         /* Get user available data */

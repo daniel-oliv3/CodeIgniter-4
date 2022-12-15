@@ -10,7 +10,7 @@
                 <h3 class="text-center">Redefinir a Senha</h3>
                 <hr>
 
-                <?= form_open('user_recover_password_define_submit', ['novalidate' => true]) ?>                
+                <?= form_open('user_recover_password_define_submit') ?>                
 
                 <input type="hidden" name="id_user" value="<?= aes_encrypt($id_user) ?>">
 

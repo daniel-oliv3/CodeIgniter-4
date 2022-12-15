@@ -10,7 +10,7 @@
                 <h3 class="text-center">Login</h3>
                 <hr>
 
-                <?= form_open('login_submit', ['novalidate' => true]) ?>
+                <?= form_open('login_submit') ?>
 
                 <div class="mb-3">
                     <label for="text_username" class="form-label">Email</label>
@@ -40,6 +40,9 @@
 
                 <?= form_close() ?>  
 
+                <?php if(!empty($server_errors)): ?>
+                    <div class="alert alert-danger text-center p-2"><?= $server_error ?></div>
+                <?php endif; ?>
             </div>
         </div>
     </div>

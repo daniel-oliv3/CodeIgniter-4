@@ -10,7 +10,7 @@
                 <h3 class="text-center">Nova conta de usuário</h3>
                 <hr>
 
-                <?= form_open('new_user_account_submit', ['novalidate' => true]) ?>
+                <?= form_open('new_user_account_submit') ?>
 
                 <div class="mb-3">
                     <label for="text_username" class="form-label">Email</label>

@@ -10,7 +10,7 @@
                 <h3 class="text-center">Recuperar Senha</h3>
                 <hr>
 
-                <?= form_open('user_recover_password_submit', ['novalidate' => true]) ?>
+                <?= form_open('user_recover_password_submit') ?>
 
                 <div class="mb-3">
                     <label for="text_username" class="form-label">Esqueci minha senha ? Qual é o seu nome de usuário?</label>
