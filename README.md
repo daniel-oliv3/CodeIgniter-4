@@ -616,9 +616,10 @@ no parâmetro.|      matches[field]
 - http://localhost/CodeIgniter-4/app_44/public/index.php/login_frm
 
 
+### 45 - CI AUTH FINALIZAÇÃO DO PROJETO
+- Ex: app_45
 
-
-
+- http://localhost/CodeIgniter-4/app_45/public/index.php/login_frm
 
 
 
