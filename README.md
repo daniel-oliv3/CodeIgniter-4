@@ -622,11 +622,58 @@ no parâmetro.|      matches[field]
 - http://localhost/CodeIgniter-4/app_45/public/index.php/login_frm
 
 
+### 46 - CI AUTH CRIAÇÃO DO REPOSITÓRIO NO GITHUB
+- Ex: app_46
+
+```
+composer update
+```
+
+**Github**
+```
+git config --global user.name "Seu Nome"
+```
+
+```
+git config --global user.email "Exemplo.@gmail.com"
+```
+
+```
+git init
+```
+
+```
+git status
+```
+
+```
+git add .
+```
+
+```
+git commit -m "meu commit"
+```
+
+- Criar um novo repositorio no site do github
+- Site: https://github.com/new
+
+**…or push an existing repository from the command line**
+```
+git remote add origin https://github.com/daniel-oliv3/ci-auth-codeigniter.git
+```
+
+```
+git branch -M main
+```
+
+```
+git push -u origin main
+```
+
+
 
 ##
-
-
-
+### 
 ##
 
 - By:  **Daniel Oliveira**
